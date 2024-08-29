@@ -6,4 +6,4 @@ Nothing too complicated.
 
 ## Third Party Services
 
-- [[Basin ](https://usebasin.com/guides/static/astro)]
+- [Basin](https://usebasin.com/guides/static/astro)
