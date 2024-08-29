@@ -1,0 +1,96 @@
+---
+// Supports weights 100-900
+import "@fontsource-variable/montserrat";
+import "../styles/global.scss";
+import Navigation from "../components/Navigation.astro";
+import { Image } from "astro:assets";
+import logoIcon from "../images/logo-icon-sm.png";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<a class="sr-only focus:not-sr-only skip-link" href="#about"
+			>Skip to main content</a
+		>
+		<header class="navbar">
+			<nav class="navbar-container">
+				<input
+					type="checkbox"
+					role="button"
+					aria-label="Display the menu"
+					aria-expanded="false"
+					aria-controls="menu"
+				/>
+				<div class="hamburger-lines">
+					<span class="line line1"></span>
+					<span class="line line2"></span>
+					<span class="line line3"></span>
+				</div>
+				<Navigation />
+			</nav>
+			<!-- only shows on mobile -->
+			<a href="/" rel="home" class="mobile-logo"
+				><Image
+					class="logo-icon"
+					src={logoIcon}
+					alt="Fenix Therapeutic Services"
+				/></a
+			>
+		</header>
+
+		<slot />
+
+		<footer>
+			<p>
+				&copy;<span id="footer-year">{year}</span>&nbsp;Fenix Therapeutic
+				Services. All rights reserved.
+			</p>
+		</footer>
+	</body>
+	<script is:inline data-astro-rerun>
+		document.getElementById("footer-year").innerText = new Date().getFullYear();
+
+		document.querySelector("nav input").onclick = function () {
+			if (this.checked) this.setAttribute("aria-expanded", true);
+			else this.setAttribute("aria-expanded", false);
+		};
+
+		// const header = document.querySelector(".navbar");
+		// const icon = document.querySelector(".icon");
+		// let scrollPos = 730;
+		// console.log(scrollPos);
+
+		// function checkPosition() {
+		// 	let windowY = window.scrollY;
+		// 	console.log(windowY);
+		// 	if (windowY > scrollPos) {
+		// 		header.classList.add("is-transparent");
+		// 		icon.classList.remove("is-hidden");
+		// 		icon.classList.add("is-visible");
+		// 	} else {
+		// 		header.classList.remove("is-transparent");
+		// 		icon.classList.remove("is-visible");
+		// 		icon.classList.add("is-hidden");
+		// 	}
+		// 	scrollPos = windowY;
+		// }
+
+		// window.addEventListener("scroll", checkPosition);
+	</script>
+</html>

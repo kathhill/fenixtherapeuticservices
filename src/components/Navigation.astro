@@ -1,0 +1,16 @@
+---
+import { Image } from "astro:assets";
+import logoIconSm from "../images/logo-icon-sm.png";
+---
+
+<ul id="menu" class="menu-items">
+	<li><a href="/#about">About</a></li>
+	<li><a href="/#services">Services</a></li>
+	<li class="icon hidden">
+		<a href="/"><Image src={logoIconSm} alt="Fenix Therapeutic Services" /></a>
+	</li>
+	<li><a href="/#book">Book</a></li>
+	<li>
+		<a href="mailto:dr.harmeling@fenixtherapeuticservices.com">Contact</a>
+	</li>
+</ul>
