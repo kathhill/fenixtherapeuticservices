@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import Card from "../components/Card.astro";
+---
+
+<Layout page="practice" title="Fenix Therapeutic Services' Areas of Practice">
+	<main class="wrapper">
+		<section id="practice" class="section p-group">
+			<div class="p-layer mid-layer practice-grid">
+				<article>
+					<h2>Areas of Practice</h2>
+					<ul role="list" class="link-card-grid hidden">
+						<Card
+							title="Cognitive Behavioral Therapy (CBT)"
+							description="Cognitive Behavioral Therapy (CBT) is an evidence-based therapeutic approach that helps individuals manage mental health issues by identifying and changing negative thought patterns and behaviors to improve overall well-being."
+							link="/practice#cbt"
+						/>
+						<Card
+							title="Solution-Focused Therapy (SFT)"
+							description="Solution-Focused Therapy is a brief, goal-oriented approach that empowers clients to make positive changes by identifying and building on their strengths and resources to address current challenges and achieve desired outcomes."
+							link=""
+						/>
+						<Card
+							title="Trauma Informed Therapy"
+							description="Trauma-Informed Therapy is a therapeutic approach that prioritizes safety, empowerment, and healing by creating a sensitive environment to help individuals who have experienced trauma build trust, process their experiences, and regain control and stability in their lives."
+							link="/practice#trauma-informed"
+						/>
+						<Card
+							title="Trauma Informed CBT"
+							description="Trauma-Informed Cognitive Behavioral Therapy (CBT) combines trauma-sensitive care with CBT techniques to help individuals understand and manage the effects of trauma, fostering healing, healthier coping, and regaining control over their lives."
+							link=""
+						/>
+						<Card
+							title="Certified Complex Trauma-Informed Therapist (CCTP I/II)"
+							description="As a certified Complex Trauma Informed Therapist, I use a compassionate, trauma-sensitive approach to create a safe environment that addresses the complex layers of trauma, helping clients rebuild safety, control, and well-being."
+							link=""
+						/>
+						<Card
+							title="Certified Narcissistic Abuse Treatment Clinician (NATC)"
+							description="As a Certified Narcissistic Abuse Treatment Clinician, I specialize in providing advanced, targeted care to help individuals recover from the devastating effects of narcissistic abuse, rebuild self-worth, establish healthy boundaries, and reclaim their lives."
+							link=""
+						/>
+						<Card
+							title="Eye Movement Desensitization & Reprocessing (EMDR)"
+							description="Eye Movement Desensitization and Reprocessing (EMDR) is an evidence-based therapy that uses guided eye movements to help individuals process and heal from traumatic memories, reducing emotional intensity and promoting resilience and well-being."
+							link=""
+						/>
+					</ul>
+				</article>
+			</div>
+		</section>
+	</main>
+</Layout>

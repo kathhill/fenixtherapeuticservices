@@ -1,13 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 import Form from "../components/Form.astro";
 import { Image } from "astro:assets";
 import logo from "../images/logo-reverse.png";
+
 import oceansunrise from "../images/ocean-sunrise.mp4";
-import drGreg from "../images/greg-harmeling.jpg";
+import drGreg from "../images/greg.jpg";
 ---
 
-<Layout title="Fenix Therapeutic Services | Gregory Harmeling, Psy.D. ">
+<Layout
+	page="home"
+	title="Fenix Therapeutic Services | Gregory Harmeling, Psy.D. "
+>
 	<main class="wrapper">
 		<section class="hero p-group intro-screen" id="intro">
 			<video autoplay loop muted playsinline class="video">
@@ -25,63 +30,67 @@ import drGreg from "../images/greg-harmeling.jpg";
 		</section>
 		<section id="about" class="section p-group">
 			<div class="p-layer base-layer about-grid">
+				<h2>About Fenix Therapeutic Services</h2>
 				<div>
-					<h3>About Fenix Therapeutic Services</h3>
+					<Image src={drGreg} alt="Gregory Harmeling, Psy.D." />
 					<p>
 						Fenix Therapeutic Services is the online practice of Dr. Gregory
 						Harmeling, Psy.D., a Licensed Marriage and Family Therapist with
 						over a decade of experience, dedicated to helping individuals
 						navigate their mental health challenges with compassion and empathy.
-						His practice specializes in men's issues, Trauma-Informed Therapy,
-						PTSD, and recovery from narcissistic, abusive relationships. As a
-						certified Level 2 Clinical Trauma Professional and a Narcissistic
-						Abuse Treatment Clinician (NATC), he is equipped to provide the
-						highest level of care and support. His therapeutic approach is
-						rooted in understanding and empathy, utilizing a combination of
-						Cognitive Behavioral Therapy (CBT), Solution-Focused Therapy,
-						Trauma-Informed Therapy, and Eye Movement Desensitization and
-						Reprocessing (EMDR). These methods are tailored to meet the unique
-						needs of each client, ensuring a personalized and effective
-						treatment experience. Throughout his career, he has had the
-						privilege of working with a diverse population of clients, including
-						children in the foster system, teenagers in the juvenile justice
-						system, and adults who have been justice-impacted. Additionally, he
-						has extensive experience helping adolescents and adults cope with
-						depression and anxiety. These experiences have provided him with the
-						skills and insight to support clients from various backgrounds and
-						with different needs.
+						<a href="/about">Read more</a>
 					</p>
 				</div>
-				<Image src={drGreg} alt="Gregory Harmeling, Psy.D." />
 			</div>
 		</section>
-		<section id="services" class="section p-group">
-			<div class="p-layer mid-layer">
-				<div>
-					<h3>Services</h3>
+		<section id="practice" class="section p-group">
+			<div class="p-layer mid-layer practice-grid">
+				<article>
+					<h2>Areas of Practice</h2>
 					<p>
-						Dr. Harmeling offers online individual therapy sessions, providing
-						flexibility and convenience for his clients. Sessions range from 60
-						to 90 minutes, depending on the treatment method used. Clients can
-						expect a non-judgmental space to express their thoughts and
-						feelings, with many describing therapy with Dr. Harmeling as akin to
-						talking to a friend. His practice is solely telehealth, with
-						sessions available Monday through Friday from 8am to 1pm, and
-						weekend sessions under special circumstances. The fee for an hour
-						session is $150, but Dr. Harmeling offers a sliding scale for those
-						who qualify. MasterCard, Visa, Zelle, and Cashapp are accepted
-						methods of payment, making it easy for clients to access the help
-						they need. Ready to take the next step? Contact Dr. Harmeling today
-						to schedule your consultation and start your journey towards healing
-						and growth.
+						Fenix Therapeutic Services specializes in the following areas of
+						therapy:
 					</p>
-				</div>
+					<ul role="list" class="link-card-grid hidden">
+						<Card
+							title="Cognitive Behavioral Therapy (CBT)"
+							topic="CBT"
+							link="/practice#cbt"
+						/>
+						<Card title="Solution-Focused Therapy (SFT)" topic="SFT" link="" />
+						<Card
+							title="Trauma Informed Therapy"
+							topic="Trauma-informed Therapy"
+							link="/practice#trauma-informed"
+						/>
+						<Card
+							title="Trauma-Informed CBT"
+							topic="Trauma-informed CBT"
+							link=""
+						/>
+						<Card
+							title="Certified Complex Trauma-Informed Therapist (CCTP I/II)"
+							topic="CCTP"
+							link=""
+						/>
+						<Card
+							title="Certified Narcissistic Abuse Treatment Clinician (NATC)"
+							topic="NATC"
+							link=""
+						/>
+						<Card
+							title="Eye Movement Desensitization & Reprocessing (EMDR)"
+							topic="EMDR"
+							link=""
+						/>
+					</ul>
+				</article>
 			</div>
 		</section>
 		<section id="book" class="section p-group">
 			<div class="p-layer top-layer">
 				<div>
-					<h3>Book a Session</h3>
+					<h2>Book a Session</h2>
 					<p>
 						Please fill out the form below. You should receive a reply within 24
 						hours.
@@ -117,24 +126,41 @@ import drGreg from "../images/greg-harmeling.jpg";
 		margin: 0 auto;
 	}
 	section {
-		padding: 0 5rem;
+		padding: 1.5rem;
+		@media (min-width: 1024px) {
+			padding: 0 5rem;
+		}
+		h2 {
+			text-align: center;
+		}
 	}
 	.hero {
+		background-image: url(../images/ocean-sunrise-frame-0m16s.jpg);
 		background-size: cover;
 		height: 100vh;
 		width: 100vw;
-		position: absolute;
-		margin-bottom: 100px;
+		// position: absolute;
+		// margin-bottom: 100px;
+		max-height: 620px;
+		@media (min-width: 1024px) {
+			background-image: none;
+			margin-bottom: 625px;
+			position: absolute;
+		}
 
 		.video {
-			object-fit: cover;
-			width: 100vw;
-			height: 100vh;
-			opacity: 0.5;
-			position: fixed;
-			top: 0;
-			left: 0;
-			z-index: -1;
+			display: none;
+			@media (min-width: 1024px) {
+				display: block;
+				object-fit: cover;
+				width: 100vw;
+				height: 100vh;
+				opacity: 0.5;
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: -1;
+			}
 		}
 		// .overlay {
 		// 	position: absolute;
@@ -146,126 +172,106 @@ import drGreg from "../images/greg-harmeling.jpg";
 		// 	mix-blend-mode: overlay;
 		// }
 		.viewport-header {
+			margin-top: 2rem;
 			padding: 1rem;
 			animation: 5s ease-in 0.5s 1 fadeIn;
-			// display: flex;
-			// align-items: center;
-			// justify-content: center;
-			// flex-direction: column;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
 			opacity: 1;
 			opacity: var(--headerOpacity);
 			transform: scale(var(--headerScale));
-
-			.logo {
-				max-width: 1000px;
-				height: auto;
+			@media (min-width: 1024px) {
+				margin-top: 30rem;
 			}
 
+			h1 {
+				display: flex;
+				justify-content: center;
+				.logo {
+					width: 100%;
+					height: auto;
+					@media (min-width: 1024px) {
+						width: 75%;
+						max-width: 1000px;
+					}
+				}
+			}
 			h2 {
 				text-align: center;
-				width: 1000px;
+				@media (min-width: 1024px) {
+					width: 1000px;
+				}
 			}
 		}
 	}
 	.about-grid {
 		display: grid;
-		grid-template-columns: 1fr 1fr; // TODO: this is desktop view - add mobile styles
+		grid-template-columns: 1fr;
 		gap: 1.5rem;
 		padding: 0;
 		transition: all 3s ease-in;
-	}
-	form {
-		border: 2px solid #fff;
-		border-radius: 6px;
-		color: #fff;
-		background: #3f3a7c;
-		box-sizing: border-box;
-		margin: 2rem auto;
-		padding: 2rem;
-		width: 100%;
-		@media (min-width: 768px) {
-			width: 50%;
-		}
-	}
-
-	// parallax pieces
-	.wrapper {
-		height: 100vh;
-		overflow-x: hidden;
-		overflow-y: auto;
-		perspective: 10px;
-	}
-	.wrapper::-webkit-scrollbar {
-		// hide the inner scrollbar defined above for parallax
-		display: none;
-	}
-	.intro-screen {
-		height: 100vh;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.p-group {
-		position: relative;
-		height: 100vh;
-		width: 100vw;
-		transform-style: preserve-3d;
-	}
-	.p-layer {
-		color: #fff;
-		position: absolute;
-		inset: 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		&.base-layer {
-			flex-direction: row;
-		}
-
-		a {
-			color: #fff;
+		@media (min-width: 1024px) {
+			margin: 0 10rem;
 		}
 
 		div {
-			width: 50%;
+			@media (min-width: 768px) {
+				display: flex;
+				align-items: flex-start;
+			}
 		}
-	}
-	.base-layer {
-		/* scale calculation: 1 + ((Z transform value * -1) / perspective) */
-		transform: translateZ(-5px) scale(1.5);
-	}
-	.mid-layer {
-		transform: translate(0);
-	}
-	.top-layer {
-		transform: translateZ(-5px) scale(1.5);
-	}
-	#intro {
-		z-index: 0;
-	}
-	#about {
-		z-index: -1;
 		img {
-			width: 395px;
-			height: 533px;
 			border: 2px solid #fff;
-			box-shadow: 5px 0px 10px 0px #aaa;
+			box-shadow: 0 10px 6px -6px #666;
+			width: 55%;
+			height: auto;
+			margin: 1.5rem auto;
+			max-width: 265px;
+			@media (min-width: 768px) {
+				margin: 1.5rem 2rem 1.5rem auto;
+			}
 		}
-		> .base-layer {
-			background-color: #262161;
+		p {
+			margin-bottom: 1.5rem;
+			flex: 1;
+			padding: 1rem;
+			@media (min-width: 1024px) {
+				max-width: 60%;
+			}
 		}
 	}
-	#services {
-		margin-bottom: 315px;
-		> .mid-layer {
-			background-image: url(../images/bg-services.jpg);
+	#practice {
+		padding-left: 0;
+		padding-right: 0;
+		.practice-grid {
+			background-image: url(../images/bg-practice.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
-			div {
-				color: #000;
+			article {
 				font-weight: 500;
+				padding: 5rem;
+				> p {
+					text-align: center;
+					margin-bottom: 2rem;
+				}
 			}
+		}
+	}
+
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+		margin-bottom: 2rem;
+		padding: 0;
+		transition: all 3s ease-in;
+		@media (min-width: 768px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (min-width: 1500px) {
+			grid-template-columns: repeat(4, 1fr);
 		}
 	}
 	#book {
@@ -273,8 +279,98 @@ import drGreg from "../images/greg-harmeling.jpg";
 		form {
 			width: auto;
 		}
+		form {
+			border: 2px solid #fff;
+			border-radius: 6px;
+			color: #fff;
+			background: #3f3a7c;
+			box-sizing: border-box;
+			margin: 2rem auto;
+			padding: 2rem;
+			width: 100%;
+			@media (min-width: 768px) {
+				width: 50%;
+			}
+		}
+	}
+
+	@media (min-width: 1024px) {
+		// parallax pieces
+		.wrapper {
+			height: 100vh;
+			overflow-x: hidden;
+			overflow-y: auto;
+			perspective: 10px;
+		}
+		.wrapper::-webkit-scrollbar {
+			// hide the inner scrollbar defined above for parallax
+			display: none;
+		}
+		.intro-screen {
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.p-group {
+			position: relative;
+			height: 100vh;
+			width: 100vw;
+			transform-style: preserve-3d;
+		}
+		.p-layer {
+			color: #fff;
+			position: absolute;
+			inset: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			a {
+				color: #fff;
+			}
+
+			// div {
+			// 	width: 50%;
+			// }
+		}
+		.base-layer {
+			/* scale calculation: 1 + ((Z transform value * -1) / perspective) */
+			transform: translateZ(-5px) scale(1.5);
+		}
+		.mid-layer {
+			transform: translate(0);
+		}
+		.top-layer {
+			transform: translateZ(-5px) scale(1.5);
+		}
+		#intro {
+			z-index: 0;
+		}
+		#about {
+			z-index: -1;
+			img {
+			}
+			> .base-layer {
+				background-color: #262161;
+			}
+		}
+		#practice {
+			margin-bottom: 315px;
+			> .mid-layer {
+				// background-image: url(../images/bg-practice.jpg);
+				// background-repeat: no-repeat;
+				// background-size: cover;
+				// article {
+				// 	color: #000;
+				// 	font-weight: 500;
+				// }
+			}
+		}
 	}
 </style>
+
 <script>
 	const target = document.querySelector("#about") as HTMLElement;
 	const menuIcon = document.querySelector("#menu .icon") as HTMLElement;
@@ -289,7 +385,7 @@ import drGreg from "../images/greg-harmeling.jpg";
 
 	function handleIntersection(entries: any[]) {
 		entries.map((entry) => {
-			if (entry.isIntersecting) {
+			if (entry.isIntersecting && screen.width > 1023) {
 				menuIcon.classList.remove("hidden");
 				menuIcon.classList.add("space-above");
 				menuIcon.classList.add("animate");

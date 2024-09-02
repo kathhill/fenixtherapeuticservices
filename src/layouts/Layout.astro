@@ -4,13 +4,13 @@ import "@fontsource-variable/montserrat";
 import "../styles/global.scss";
 import Navigation from "../components/Navigation.astro";
 import { Image } from "astro:assets";
-import logoIcon from "../images/logo-icon-sm.png";
 
 interface Props {
 	title: string;
+	page: string;
 }
 
-const { title } = Astro.props;
+const { title, page } = Astro.props;
 const year = new Date().getFullYear();
 ---
 
@@ -24,7 +24,7 @@ const year = new Date().getFullYear();
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body id={page}>
 		<a class="sr-only focus:not-sr-only skip-link" href="#about"
 			>Skip to main content</a
 		>
@@ -32,26 +32,17 @@ const year = new Date().getFullYear();
 			<nav class="navbar-container">
 				<input
 					type="checkbox"
+					id="menu-toggle"
 					role="button"
 					aria-label="Display the menu"
 					aria-expanded="false"
 					aria-controls="menu"
 				/>
-				<div class="hamburger-lines">
-					<span class="line line1"></span>
-					<span class="line line2"></span>
-					<span class="line line3"></span>
-				</div>
+				<label class="menu-btn" for="menu-toggle">
+					<span></span>
+				</label>
 				<Navigation />
 			</nav>
-			<!-- only shows on mobile -->
-			<a href="/" rel="home" class="mobile-logo"
-				><Image
-					class="logo-icon"
-					src={logoIcon}
-					alt="Fenix Therapeutic Services"
-				/></a
-			>
 		</header>
 
 		<slot />
@@ -92,5 +83,19 @@ const year = new Date().getFullYear();
 		// }
 
 		// window.addEventListener("scroll", checkPosition);
+	</script>
+	<script>
+		const menu = document.getElementById("menu") as HTMLElement;
+		const menuToggle = document.getElementById(
+			"menu-toggle"
+		) as HTMLFormElement;
+
+		menu.addEventListener("click", handleMenuClick);
+
+		function handleMenuClick(event) {
+			if (event.target instanceof HTMLAnchorElement) {
+				menuToggle.checked = false;
+			}
+		}
 	</script>
 </html>

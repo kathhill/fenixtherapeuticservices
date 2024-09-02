@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import drGreg from "../images/greg-harmeling.jpg";
+---
+
+<Layout
+	page="about"
+	title="About Fenix Therapeutic Services and Gregory Harmeling, Psy.D. "
+>
+	<main class="wrapper">
+		<section>
+			<div>
+				<h3>About Fenix Therapeutic Services</h3>
+				<p>
+					Fenix Therapeutic Services is the online practice of Dr. Gregory
+					Harmeling, Psy.D., a Licensed Marriage and Family Therapist with over
+					a decade of experience, dedicated to helping individuals navigate
+					their mental health challenges with compassion and empathy. His
+					practice specializes in men's issues, Trauma-Informed Therapy, PTSD,
+					and recovery from narcissistic, abusive relationships. As a certified
+					Level 2 Clinical Trauma Professional and a Narcissistic Abuse
+					Treatment Clinician (NATC), he is equipped to provide the highest
+					level of care and support. His therapeutic approach is rooted in
+					understanding and empathy, utilizing a combination of Cognitive
+					Behavioral Therapy (CBT), Solution-Focused Therapy, Trauma-Informed
+					Therapy, and Eye Movement Desensitization and Reprocessing (EMDR).
+					These methods are tailored to meet the unique needs of each client,
+					ensuring a personalized and effective treatment experience. Throughout
+					his career, he has had the privilege of working with a diverse
+					population of clients, including children in the foster system,
+					teenagers in the juvenile justice system, and adults who have been
+					justice-impacted. Additionally, he has extensive experience helping
+					adolescents and adults cope with depression and anxiety. These
+					experiences have provided him with the skills and insight to support
+					clients from various backgrounds and with different needs.
+				</p>
+			</div>
+			<Image src={drGreg} alt="Gregory Harmeling, Psy.D." />
+		</section>
+	</main>
+</Layout>
+
+<style lang="scss"></style>

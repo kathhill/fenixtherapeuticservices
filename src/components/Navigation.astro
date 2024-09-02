@@ -3,14 +3,19 @@ import { Image } from "astro:assets";
 import logoIconSm from "../images/logo-icon-sm.png";
 ---
 
-<ul id="menu" class="menu-items">
-	<li><a href="/#about">About</a></li>
-	<li><a href="/#services">Services</a></li>
+<ul id="menu" class="menu-wrapper">
+	<li class="home"><a href="/" class="menu-item">Home</a></li>
+	<li><a class="menu-item" href="/#about">About</a></li>
+	<li><a class="menu-item" href="/#practice">Practice</a></li>
 	<li class="icon hidden">
-		<a href="/"><Image src={logoIconSm} alt="Fenix Therapeutic Services" /></a>
+		<a class="menu-item" href="/"
+			><Image src={logoIconSm} alt="Fenix Therapeutic Services" /></a
+		>
 	</li>
-	<li><a href="/#book">Book</a></li>
+	<li><a class="menu-item" href="/#book">Book</a></li>
 	<li>
-		<a href="mailto:dr.harmeling@fenixtherapeuticservices.com">Contact</a>
+		<a class="menu-item" href="mailto:dr.harmeling@fenixtherapeuticservices.com"
+			>Contact</a
+		>
 	</li>
 </ul>
