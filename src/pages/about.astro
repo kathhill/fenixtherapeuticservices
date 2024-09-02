@@ -10,35 +10,70 @@ import drGreg from "../images/greg-harmeling.jpg";
 >
 	<main class="wrapper">
 		<section>
-			<div>
-				<h3>About Fenix Therapeutic Services</h3>
+			<h1>About Fenix Therapeutic Services</h1>
+			<article>
+				<Image src={drGreg} alt="Gregory Harmeling, Psy.D." />
 				<p>
 					Fenix Therapeutic Services is the online practice of Dr. Gregory
 					Harmeling, Psy.D., a Licensed Marriage and Family Therapist with over
 					a decade of experience, dedicated to helping individuals navigate
 					their mental health challenges with compassion and empathy. His
 					practice specializes in men's issues, Trauma-Informed Therapy, PTSD,
-					and recovery from narcissistic, abusive relationships. As a certified
-					Level 2 Clinical Trauma Professional and a Narcissistic Abuse
-					Treatment Clinician (NATC), he is equipped to provide the highest
-					level of care and support. His therapeutic approach is rooted in
-					understanding and empathy, utilizing a combination of Cognitive
+					and recovery from narcissistic, abusive relationships.
+				</p>
+				<p>
+					As a certified Level 2 Clinical Trauma Professional and a Narcissistic
+					Abuse Treatment Clinician (NATC), he is equipped to provide the
+					highest level of care and support. His therapeutic approach is rooted
+					in understanding and empathy, utilizing a combination of Cognitive
 					Behavioral Therapy (CBT), Solution-Focused Therapy, Trauma-Informed
 					Therapy, and Eye Movement Desensitization and Reprocessing (EMDR).
 					These methods are tailored to meet the unique needs of each client,
-					ensuring a personalized and effective treatment experience. Throughout
-					his career, he has had the privilege of working with a diverse
-					population of clients, including children in the foster system,
-					teenagers in the juvenile justice system, and adults who have been
-					justice-impacted. Additionally, he has extensive experience helping
-					adolescents and adults cope with depression and anxiety. These
+					ensuring a personalized and effective treatment experience.
+				</p>
+				<p>
+					Throughout his career, he has had the privilege of working with a
+					diverse population of clients, including children in the foster
+					system, teenagers in the juvenile justice system, and adults who have
+					been justice-impacted. Additionally, he has extensive experience
+					helping adolescents and adults cope with depression and anxiety. These
 					experiences have provided him with the skills and insight to support
 					clients from various backgrounds and with different needs.
 				</p>
-			</div>
-			<Image src={drGreg} alt="Gregory Harmeling, Psy.D." />
+			</article>
 		</section>
 	</main>
 </Layout>
 
-<style lang="scss"></style>
+<style lang="scss">
+	section {
+		height: 100vh;
+		padding: 2rem;
+		@media (min-width: 1024px) {
+			padding: 10rem 5rem;
+		}
+		h1 {
+			margin-bottom: 2rem;
+		}
+		article {
+			img {
+				border: 2px solid #fff;
+				box-shadow: 0 10px 6px -6px #666;
+				width: 100%;
+				height: auto;
+				margin-bottom: 2rem;
+				max-width: 350px;
+			}
+			p {
+				margin-bottom: 2rem;
+			}
+			@media (min-width: 768px) {
+				img {
+					float: right;
+					max-width: 250px;
+					margin-left: 3rem;
+				}
+			}
+		}
+	}
+</style>
