@@ -18,137 +18,154 @@
 	<button name="submit" class="btn" id="submit" type="submit" value="Send">
 		Submit
 	</button>
-</form>
 
-<!-- message send success feedback -->
-<dialog id="form-good-feedback" class="success">
-	<div>
-		<p>
-			Message sent successfully. You should receive a reply within 24 hours.
-		</p>
-	</div>
-</dialog>
+	<!-- message send success feedback -->
+	<dialog id="form-good-feedback" class="success">
+		<div>
+			<p>
+				Message sent successfully. You should receive a reply within 24 hours.
+			</p>
+		</div>
+	</dialog>
 
-<!-- message send fail feedback -->
-<dialog id="form-bad-feedback" class="error">
-	<div>
-		<p>
-			Something went wrong. Please try again or <a
-				href="mailto:dr.harmeling@fenixtherapeuticservices.com?subject=Form not working. Would like to book a session."
-			>
-				contact Fenix Therapeutic Services by email</a
-			>.
-		</p>
-	</div>
-</dialog>
+	<!-- message send fail feedback -->
+	<dialog id="form-bad-feedback" class="error">
+		<div>
+			<p>
+				Something went wrong. Please try again or
+				<a
+					href="mailto:dr.harmeling@fenixtherapeuticservices.com?subject=Would like to book a session."
+					>contact Fenix Therapeutic Services by email</a
+				>.
+			</p>
+		</div>
+	</dialog>
 
-<style lang="scss">
-	label {
-		color: #fff;
-		display: block;
-		padding: 1rem 0;
-	}
-	input,
-	textarea {
-		background: #64609b;
-		border: 1px solid #fff;
-		border-radius: 6px;
-		box-sizing: border-box;
-		box-shadow: 0 0 10px #444;
-		color: #fff;
-		font-size: 1.2rem;
-		width: 100%;
-		&:focus {
+	<style lang="scss">
+		form {
+			border: 2px solid #fff;
+			border-radius: 6px;
 			color: #fff;
-		}
-	}
-	input {
-		height: 3rem;
-		padding: 20px;
-	}
-	textarea {
-		height: 150px;
-		padding: 1rem;
-	}
-	button {
-		background: #fff;
-		color: #333;
-		cursor: pointer;
-		font-size: 1.5rem;
-		margin: 2rem auto;
-		padding: 0.5rem;
-		@media (min-width: 768px) {
-			width: 9rem;
-		}
-	}
-	dialog {
-		&.success,
-		&.error {
-			border-radius: 0.5rem;
-			bottom: 1rem;
-			display: flex;
-			margin-left: auto;
-			margin-right: auto;
-			opacity: 0;
-			position: fixed;
-			padding: 0;
-			transition-duration: 0.3s;
-			visibility: hidden;
-			z-index: 10;
-			> div {
-				text-align: center;
+			background: #3f3a7c;
+			box-sizing: border-box;
+			margin: 2rem auto;
+			padding: 2rem;
+			width: 100%;
+			@media (min-width: 1024px) {
+				//width: 50%;
+			}
+			label {
+				color: #fff;
+				display: block;
+				padding: 1rem 0;
+			}
+			input,
+			textarea {
+				background: #64609b;
+				border: 1px solid #fff;
+				border-radius: 6px;
+				box-sizing: border-box;
+				box-shadow: 0 0 10px #444;
+				color: #fff;
+				font-size: 1.2rem;
+				width: 100%;
+				&:focus {
+					color: #fff;
+				}
+			}
+			input {
+				height: 3rem;
+				padding: 20px;
+			}
+			textarea {
+				height: 150px;
 				padding: 1rem;
 			}
-		}
-		&.success {
-			background-color: rgb(187 247 208);
-			color: rgb(22 101 52);
-		}
-		&.error {
-			background-color: rgb(254 202 202);
-			color: rgb(153 27 27);
-		}
-	}
-</style>
-
-<script>
-	// handle the form submission
-	var xhr = new XMLHttpRequest();
-
-	// only one contact form supported per page
-	const form = document.getElementById("contact-form") as HTMLFormElement;
-
-	const handleFormSubmission = (event) => {
-		// prevent page from reloading
-		event.preventDefault();
-
-		// get form data
-		const formData = new FormData(form);
-
-		// create POST request to the form action attribute
-		xhr.open("POST", form.action, true);
-
-		// make sure we receive json back
-		xhr.setRequestHeader("Accept", "application/json");
-
-		// SEND IT!
-		xhr.send(formData);
-
-		// once we get a response...
-		xhr.onload = function () {
-			const response = JSON.parse(xhr.response);
-
-			if (xhr.status === 200) {
-				// The request was successful
-				console.log("Form submitted successfully.");
-				// reset form on successful email send
-				form?.reset();
-			} else {
-				const message = "Form submission failed with error: " + response.error;
-				console.log(message);
+			.sr-only {
+				width: 1rem;
 			}
-		};
-	};
+			button {
+				background: #fff;
+				color: #333;
+				cursor: pointer;
+				font-size: 1.5rem;
+				margin: 2rem auto;
+				padding: 0.5rem;
+				@media (min-width: 768px) {
+					width: 9rem;
+				}
+			}
+		}
+		dialog {
+			&.success,
+			&.error {
+				border-radius: 0.5rem;
+				bottom: 1rem;
+				display: flex;
+				margin-left: auto;
+				margin-right: auto;
+				opacity: 0;
+				position: fixed;
+				padding: 0;
+				transition-duration: 0.3s;
+				visibility: hidden;
+				z-index: 10;
+				> div {
+					text-align: center;
+					padding: 1rem;
+				}
+			}
+			&.success {
+				background-color: rgb(187 247 208);
+				color: rgb(22 101 52);
+			}
+			&.error {
+				background-color: rgb(254 202 202);
+				color: rgb(153 27 27);
+			}
+		}
+	</style>
 
-	form?.addEventListener("submit", handleFormSubmission, true);
-</script>
+	<script>
+		// handle the form submission
+		var xhr = new XMLHttpRequest();
+
+		// only one contact form supported per page
+		const form = document.getElementById("contact-form") as HTMLFormElement;
+
+		const handleFormSubmission = (event) => {
+			// prevent page from reloading
+			event.preventDefault();
+
+			// get form data
+			const formData = new FormData(form);
+
+			// create POST request to the form action attribute
+			xhr.open("POST", form.action, true);
+
+			// make sure we receive json back
+			xhr.setRequestHeader("Accept", "application/json");
+
+			// SEND IT!
+			xhr.send(formData);
+
+			// once we get a response...
+			xhr.onload = function () {
+				const response = JSON.parse(xhr.response);
+
+				if (xhr.status === 200) {
+					// The request was successful
+					console.log("Form submitted successfully.");
+					// reset form on successful email send
+					form?.reset();
+				} else {
+					const message =
+						"Form submission failed with error: " + response.error;
+					console.log(message);
+				}
+			};
+		};
+
+		form?.addEventListener("submit", handleFormSubmission, true);
+	</script>
+</form>
