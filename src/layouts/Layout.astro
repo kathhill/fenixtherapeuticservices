@@ -92,7 +92,7 @@ const year = new Date().getFullYear();
 
 		menu.addEventListener("click", handleMenuClick);
 
-		function handleMenuClick(event) {
+		function handleMenuClick(event: Event) {
 			if (event.target instanceof HTMLAnchorElement) {
 				menuToggle.checked = false;
 			}
