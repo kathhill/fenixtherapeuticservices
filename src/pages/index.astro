@@ -45,12 +45,12 @@ import drGreg from "../images/greg.jpg";
 		</section>
 		<section id="practice" class="section p-group">
 			<div class="p-layer mid-layer practice-grid">
+				<h2>Areas of Practice</h2>
+				<p>
+					Fenix Therapeutic Services specializes in the following areas of
+					therapy:
+				</p>
 				<article>
-					<h2>Areas of Practice</h2>
-					<p>
-						Fenix Therapeutic Services specializes in the following areas of
-						therapy:
-					</p>
 					<ul role="list" class="link-card-grid hidden">
 						<Card
 							title="Cognitive Behavioral Therapy (CBT)"
@@ -89,14 +89,33 @@ import drGreg from "../images/greg.jpg";
 		</section>
 		<section id="book" class="section p-group">
 			<div class="p-layer top-layer">
-				<div>
+				<article>
 					<h2>Book a Session</h2>
 					<p>
-						Please fill out the form below. You should receive a reply within 24
-						hours.
+						Fenix Therapeutic Services offers online individual therapy
+						sessions, providing flexibility and convenience for clients.
+						Sessions range from 60 to 90 minutes, depending on the treatment
+						method used. Clients can expect a non-judgmental space to express
+						their thoughts and feelings, with many describing therapy with Dr.
+						Harmeling as akin to talking to a friend.
+					</p>
+					<p>
+						Dr. Harmeling's practice is solely telehealth, with sessions
+						available Monday through Friday from 8am to 1pm, and weekend
+						sessions under special circumstances.
+					</p>
+					<p>
+						The fee for an hour session is $150, but Fenix Therapeutic Services
+						offers a sliding scale for those who qualify. MasterCard, Visa,
+						Zelle, and Cashapp are accepted, making it easy for clients to
+						access the help they need.
+					</p>
+					<p>
+						Ready to take the next step? Fill out the form below to schedule
+						your consultation and start your journey towards healing and growth.
 					</p>
 					<Form />
-				</div>
+				</article>
 			</div>
 		</section>
 	</main>
@@ -249,13 +268,11 @@ import drGreg from "../images/greg.jpg";
 			background-image: url(../images/bg-practice.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
-			article {
-				font-weight: 500;
-				padding: 5rem;
-				> p {
-					text-align: center;
-					margin-bottom: 2rem;
-				}
+			font-weight: 500;
+			padding: 5rem;
+			> p {
+				text-align: center;
+				margin-bottom: 2rem;
 			}
 		}
 	}
@@ -275,24 +292,41 @@ import drGreg from "../images/greg.jpg";
 		}
 	}
 	#book {
-		p,
-		form {
-			width: auto;
-		}
-		form {
-			border: 2px solid #fff;
-			border-radius: 6px;
-			color: #fff;
-			background: #3f3a7c;
-			box-sizing: border-box;
-			margin: 2rem auto;
-			padding: 2rem;
-			width: 100%;
-			@media (min-width: 768px) {
-				width: 50%;
+		article {
+			padding-left: 1rem;
+			padding-right: 1rem;
+			@media (min-width: 1024px) {
+				padding-left: 3rem;
+				padding-right: 3rem;
+			}
+			@media (min-width: 1500px) {
+				padding-left: 5rem;
+				padding-right: 5rem;
+			}
+			p {
+				margin-bottom: 2rem;
 			}
 		}
 	}
+	// #book {
+	// 	p,
+	// 	form {
+	// 		width: auto;
+	// 	}
+	// 	form {
+	// 		border: 2px solid #fff;
+	// 		border-radius: 6px;
+	// 		color: #fff;
+	// 		background: #3f3a7c;
+	// 		box-sizing: border-box;
+	// 		margin: 2rem auto;
+	// 		padding: 2rem;
+	// 		width: 100%;
+	// 		@media (min-width: 1024px) {
+	// 			//width: 50%;
+	// 		}
+	// 	}
+	// }
 
 	@media (min-width: 1024px) {
 		// parallax pieces
@@ -357,7 +391,7 @@ import drGreg from "../images/greg.jpg";
 			}
 		}
 		#practice {
-			margin-bottom: 315px;
+			margin-bottom: 611px;
 			> .mid-layer {
 				// background-image: url(../images/bg-practice.jpg);
 				// background-repeat: no-repeat;
