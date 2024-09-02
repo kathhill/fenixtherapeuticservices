@@ -1,54 +1,139 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import Card from "../components/Card.astro";
 ---
 
 <Layout page="practice" title="Fenix Therapeutic Services' Areas of Practice">
 	<main class="wrapper">
-		<section id="practice" class="section p-group">
-			<div class="p-layer mid-layer practice-grid">
-				<article>
-					<h2>Areas of Practice</h2>
-					<ul role="list" class="link-card-grid hidden">
-						<Card
-							title="Cognitive Behavioral Therapy (CBT)"
-							description="Cognitive Behavioral Therapy (CBT) is an evidence-based therapeutic approach that helps individuals manage mental health issues by identifying and changing negative thought patterns and behaviors to improve overall well-being."
-							link="/practice#cbt"
-						/>
-						<Card
-							title="Solution-Focused Therapy (SFT)"
-							description="Solution-Focused Therapy is a brief, goal-oriented approach that empowers clients to make positive changes by identifying and building on their strengths and resources to address current challenges and achieve desired outcomes."
-							link=""
-						/>
-						<Card
-							title="Trauma Informed Therapy"
-							description="Trauma-Informed Therapy is a therapeutic approach that prioritizes safety, empowerment, and healing by creating a sensitive environment to help individuals who have experienced trauma build trust, process their experiences, and regain control and stability in their lives."
-							link="/practice#trauma-informed"
-						/>
-						<Card
-							title="Trauma Informed CBT"
-							description="Trauma-Informed Cognitive Behavioral Therapy (CBT) combines trauma-sensitive care with CBT techniques to help individuals understand and manage the effects of trauma, fostering healing, healthier coping, and regaining control over their lives."
-							link=""
-						/>
-						<Card
-							title="Certified Complex Trauma-Informed Therapist (CCTP I/II)"
-							description="As a certified Complex Trauma Informed Therapist, I use a compassionate, trauma-sensitive approach to create a safe environment that addresses the complex layers of trauma, helping clients rebuild safety, control, and well-being."
-							link=""
-						/>
-						<Card
-							title="Certified Narcissistic Abuse Treatment Clinician (NATC)"
-							description="As a Certified Narcissistic Abuse Treatment Clinician, I specialize in providing advanced, targeted care to help individuals recover from the devastating effects of narcissistic abuse, rebuild self-worth, establish healthy boundaries, and reclaim their lives."
-							link=""
-						/>
-						<Card
-							title="Eye Movement Desensitization & Reprocessing (EMDR)"
-							description="Eye Movement Desensitization and Reprocessing (EMDR) is an evidence-based therapy that uses guided eye movements to help individuals process and heal from traumatic memories, reducing emotional intensity and promoting resilience and well-being."
-							link=""
-						/>
-					</ul>
-				</article>
-			</div>
+		<div class="hero"></div>
+		<section>
+			<h1>
+				Fenix Therapeutic Services specializes in the following areas of
+				therapy:
+			</h1>
+			<dl>
+				<dt id="cbt">Cognitive Behavioral Therapy (CBT)</dt>
+				<dd>
+					Cognitive Behavioral Therapy (CBT) is a therapeutic approach that
+					focuses on identifying and changing negative thought patterns and
+					behaviors. By challenging and restructuring these thoughts, CBT helps
+					individuals develop healthier ways of thinking and coping with life's
+					challenges. This evidence-based therapy is effective in treating a
+					wide range of mental health issues, including anxiety, depression, and
+					trauma. Through CBT, clients gain practical tools to manage their
+					emotions and improve their overall well-being.
+				</dd>
+
+				<dt id="sft">Solution-Focused Therapy (SFT)</dt>
+				<dd>
+					Solution-focused Therapy is a goal-oriented, brief therapeutic
+					approach that emphasizes finding practical solutions to current
+					challenges rather than focusing on past issues. This therapy helps
+					clients identify their strengths, resources, and successes to create a
+					clear path toward achieving their desired outcomes. By concentrating
+					on what works and building on existing abilities, Solution-Focused
+					Therapy empowers clients to make positive changes and move forward
+					with confidence and clarity.
+				</dd>
+
+				<dt id="trauma-informed">Trauma-Informed Therapy</dt>
+				<dd>
+					Trauma-Informed Therapy is an approach that prioritizes safety,
+					empowerment, and healing for individuals who have experienced trauma.
+					It recognizes the profound impact trauma can have on a person’s
+					mental, emotional, and physical well-being and seeks to create a
+					therapeutic environment that is sensitive to these effects. By
+					focusing on building trust and resilience, Trauma-Informed Therapy
+					helps clients process their experiences, reduce symptoms, and reclaim
+					a sense of control and stability in their lives.
+				</dd>
+
+				<dt id="trauma-cbt">Trauma-Informed CBT</dt>
+				<dd>
+					Trauma-Informed Cognitive Behavioral Therapy (CBT) is a specialized
+					approach that integrates the principles of trauma-informed care with
+					the evidence-based techniques of CBT. This therapy is designed to help
+					individuals understand and manage the impact of traumatic experiences
+					by addressing the connection between their thoughts, emotions, and
+					behaviors. By creating a safe, supportive environment, Trauma-Informed
+					CBT empowers clients to heal from trauma, develop healthier coping
+					mechanisms, and regain control over their lives.
+				</dd>
+
+				<dt id="cctp">
+					Certified Complex Trauma-Informed Therapist (CCTP I/II)
+				</dt>
+				<dd>
+					Trauma-Informed Therapy is a compassionate approach that recognizes
+					the deep impact trauma can have on an individual's life, focusing on
+					creating a safe and supportive environment for healing. As a certified
+					Complex Trauma Informed Therapist, I bring specialized training and
+					expertise in addressing the complex layers of trauma, helping clients
+					navigate their experiences with greater understanding and resilience.
+					This certification ensures that my therapeutic approach is tailored to
+					the unique needs of those with complex trauma, empowering them to
+					rebuild a sense of safety, control, and well-being in their lives.
+				</dd>
+
+				<dt id="natc">
+					Certified Narcissistic Abuse Treatment Clinician (NATC)
+				</dt>
+				<dd>
+					As a Certified Narcissistic Abuse Treatment Clinician, I specialize in
+					helping individuals recover from the unique and often devastating
+					effects of narcissistic abuse. This certification means I have
+					advanced training in recognizing the patterns of manipulation and
+					control typical in narcissistic relationships and providing targeted
+					interventions to support healing and recovery. It's important because
+					survivors of narcissistic abuse require specialized care to rebuild
+					their self-worth, establish healthy boundaries, and reclaim their
+					lives after experiencing this form of emotional and psychological
+					abuse.
+				</dd>
+
+				<dt id="emdr">Eye Movement Desensitization Reprocessing (EMDR)</dt>
+				<dd>
+					Eye Movement Desensitization and Reprocessing (EMDR) is a highly
+					effective, evidence-based therapy designed to help individuals process
+					and heal from traumatic memories and distressing life experiences.
+					Through guided eye movements and other forms of bilateral stimulation,
+					EMDR helps reframe negative thoughts and reduce the emotional
+					intensity associated with trauma. This therapy enables clients to
+					process and integrate painful memories in a way that promotes healing,
+					resilience, and emotional well-being, allowing them to move forward
+					with their lives.
+				</dd>
+			</dl>
 		</section>
 	</main>
 </Layout>
+
+<style lang="scss">
+	.hero {
+		background: url(../images/lavendar-field.jpg);
+		background-size: cover;
+		background-position: center center;
+		width: 100vw;
+		height: 600px;
+		@media (max-width: 1023px) {
+			height: 400px;
+		}
+	}
+	section {
+		padding: 2rem;
+		@media (min-width: 1024px) {
+			padding: 10rem 5rem;
+		}
+		h1 {
+			margin-bottom: 2rem;
+		}
+		dl {
+			dt {
+				font-weight: bold;
+			}
+			dd {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+</style>

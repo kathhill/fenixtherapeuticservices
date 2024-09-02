@@ -57,7 +57,11 @@ import drGreg from "../images/greg.jpg";
 							topic="CBT"
 							link="/practice#cbt"
 						/>
-						<Card title="Solution-Focused Therapy (SFT)" topic="SFT" link="" />
+						<Card
+							title="Solution-Focused Therapy (SFT)"
+							topic="SFT"
+							link="/practice#sft"
+						/>
 						<Card
 							title="Trauma Informed Therapy"
 							topic="Trauma-informed Therapy"
@@ -66,22 +70,22 @@ import drGreg from "../images/greg.jpg";
 						<Card
 							title="Trauma-Informed CBT"
 							topic="Trauma-informed CBT"
-							link=""
+							link="/practice#trauma-cbt"
 						/>
 						<Card
 							title="Certified Complex Trauma-Informed Therapist (CCTP I/II)"
 							topic="CCTP"
-							link=""
+							link="/practice#cctp"
 						/>
 						<Card
 							title="Certified Narcissistic Abuse Treatment Clinician (NATC)"
 							topic="NATC"
-							link=""
+							link="/practice#natc"
 						/>
 						<Card
 							title="Eye Movement Desensitization & Reprocessing (EMDR)"
 							topic="EMDR"
-							link=""
+							link="/practice#emdr"
 						/>
 					</ul>
 				</article>
@@ -141,7 +145,6 @@ import drGreg from "../images/greg.jpg";
 	}
 	.container {
 		width: 100%;
-		//max-width: calc(100% - 2rem);
 		margin: 0 auto;
 	}
 	section {
@@ -158,8 +161,6 @@ import drGreg from "../images/greg.jpg";
 		background-size: cover;
 		height: 100vh;
 		width: 100vw;
-		// position: absolute;
-		// margin-bottom: 100px;
 		max-height: 620px;
 		@media (min-width: 1024px) {
 			background-image: none;
@@ -181,15 +182,6 @@ import drGreg from "../images/greg.jpg";
 				z-index: -1;
 			}
 		}
-		// .overlay {
-		// 	position: absolute;
-		// 	top: 0;
-		// 	left: 0;
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	background: #64609b;
-		// 	mix-blend-mode: overlay;
-		// }
 		.viewport-header {
 			margin-top: 2rem;
 			padding: 1rem;
@@ -256,6 +248,11 @@ import drGreg from "../images/greg.jpg";
 			margin-bottom: 1.5rem;
 			flex: 1;
 			padding: 1rem;
+			a,
+			a:link {
+				color: #fff;
+				text-decoratoin: none;
+			}
 			@media (min-width: 1024px) {
 				max-width: 60%;
 			}
@@ -308,25 +305,6 @@ import drGreg from "../images/greg.jpg";
 			}
 		}
 	}
-	// #book {
-	// 	p,
-	// 	form {
-	// 		width: auto;
-	// 	}
-	// 	form {
-	// 		border: 2px solid #fff;
-	// 		border-radius: 6px;
-	// 		color: #fff;
-	// 		background: #3f3a7c;
-	// 		box-sizing: border-box;
-	// 		margin: 2rem auto;
-	// 		padding: 2rem;
-	// 		width: 100%;
-	// 		@media (min-width: 1024px) {
-	// 			//width: 50%;
-	// 		}
-	// 	}
-	// }
 
 	@media (min-width: 1024px) {
 		// parallax pieces
@@ -364,10 +342,6 @@ import drGreg from "../images/greg.jpg";
 			a {
 				color: #fff;
 			}
-
-			// div {
-			// 	width: 50%;
-			// }
 		}
 		.base-layer {
 			/* scale calculation: 1 + ((Z transform value * -1) / perspective) */
@@ -392,15 +366,6 @@ import drGreg from "../images/greg.jpg";
 		}
 		#practice {
 			margin-bottom: 611px;
-			> .mid-layer {
-				// background-image: url(../images/bg-practice.jpg);
-				// background-repeat: no-repeat;
-				// background-size: cover;
-				// article {
-				// 	color: #000;
-				// 	font-weight: 500;
-				// }
-			}
 		}
 	}
 </style>

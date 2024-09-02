@@ -5,8 +5,8 @@ import logoIconSm from "../images/logo-icon-sm.png";
 
 <ul id="menu" class="menu-wrapper">
 	<li class="home"><a href="/" class="menu-item">Home</a></li>
-	<li><a class="menu-item" href="/#about">About</a></li>
-	<li><a class="menu-item" href="/#practice">Practice</a></li>
+	<li class="about"><a class="menu-item" href="/#about">About</a></li>
+	<li class="practice"><a class="menu-item" href="/#practice">Practice</a></li>
 	<li class="icon hidden">
 		<a class="menu-item" href="/"
 			><Image src={logoIconSm} alt="Fenix Therapeutic Services" /></a
@@ -19,3 +19,16 @@ import logoIconSm from "../images/logo-icon-sm.png";
 		>
 	</li>
 </ul>
+
+<script>
+	const bodyId = document.body.id;
+	let aboutLink = document.querySelector(".about > a");
+	let practiceLink = document.querySelector(".practice > a");
+
+	if (bodyId === "about" || bodyId === "practice") {
+		aboutLink?.getAttribute("href");
+		aboutLink?.setAttribute("href", "/about");
+		practiceLink?.getAttribute("href");
+		practiceLink?.setAttribute("href", "/practice");
+	}
+</script>
