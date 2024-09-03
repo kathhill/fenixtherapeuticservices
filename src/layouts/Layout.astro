@@ -3,7 +3,6 @@
 import "@fontsource-variable/montserrat";
 import "../styles/global.scss";
 import Navigation from "../components/Navigation.astro";
-import { Image } from "astro:assets";
 
 interface Props {
 	title: string;
@@ -61,28 +60,6 @@ const year = new Date().getFullYear();
 			if (this.checked) this.setAttribute("aria-expanded", true);
 			else this.setAttribute("aria-expanded", false);
 		};
-
-		// const header = document.querySelector(".navbar");
-		// const icon = document.querySelector(".icon");
-		// let scrollPos = 730;
-		// console.log(scrollPos);
-
-		// function checkPosition() {
-		// 	let windowY = window.scrollY;
-		// 	console.log(windowY);
-		// 	if (windowY > scrollPos) {
-		// 		header.classList.add("is-transparent");
-		// 		icon.classList.remove("is-hidden");
-		// 		icon.classList.add("is-visible");
-		// 	} else {
-		// 		header.classList.remove("is-transparent");
-		// 		icon.classList.remove("is-visible");
-		// 		icon.classList.add("is-hidden");
-		// 	}
-		// 	scrollPos = windowY;
-		// }
-
-		// window.addEventListener("scroll", checkPosition);
 	</script>
 	<script>
 		const menu = document.getElementById("menu") as HTMLElement;
