@@ -10,8 +10,9 @@ import drGreg from "../images/greg-harmeling.jpg";
 >
 	<main class="wrapper">
 		<section>
-			<h1>About Fenix Therapeutic Services</h1>
 			<article>
+				<h1>About Fenix Therapeutic Services</h1>
+
 				<Image src={drGreg} alt="Gregory Harmeling, Psy.D." />
 				<p>
 					Fenix Therapeutic Services is the online practice of Dr. Gregory
@@ -51,10 +52,11 @@ import drGreg from "../images/greg-harmeling.jpg";
 		@media (min-width: 1024px) {
 			padding: 10rem 5rem;
 		}
-		h1 {
-			margin-bottom: 2rem;
-		}
 		article {
+			margin: 0 auto;
+			h1 {
+				margin-bottom: 2rem;
+			}
 			img {
 				border: 2px solid #fff;
 				box-shadow: 0 10px 6px -6px #666;
@@ -72,6 +74,9 @@ import drGreg from "../images/greg-harmeling.jpg";
 					max-width: 250px;
 					margin-left: 3rem;
 				}
+			}
+			@media (min-width: 1500px) {
+				max-width: 60%;
 			}
 		}
 	}

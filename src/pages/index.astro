@@ -93,8 +93,8 @@ import drGreg from "../images/greg.jpg";
 		</section>
 		<section id="book" class="section p-group">
 			<div class="p-layer top-layer">
+				<h2>Book a Session</h2>
 				<article>
-					<h2>Book a Session</h2>
 					<p>
 						Fenix Therapeutic Services offers online individual therapy
 						sessions, providing flexibility and convenience for clients.
@@ -164,7 +164,7 @@ import drGreg from "../images/greg.jpg";
 		max-height: 620px;
 		@media (min-width: 1024px) {
 			background-image: none;
-			margin-bottom: 625px;
+			margin-bottom: 960px;
 			position: absolute;
 		}
 
@@ -232,6 +232,9 @@ import drGreg from "../images/greg.jpg";
 				display: flex;
 				align-items: flex-start;
 			}
+			@media (min-width: 1500px) {
+				max-width: 60%;
+			}
 		}
 		img {
 			border: 2px solid #fff;
@@ -271,6 +274,11 @@ import drGreg from "../images/greg.jpg";
 				text-align: center;
 				margin-bottom: 2rem;
 			}
+			article {
+				@media (min-width: 1920px) {
+					max-width: 60%;
+				}
+			}
 		}
 	}
 
@@ -289,6 +297,7 @@ import drGreg from "../images/greg.jpg";
 		}
 	}
 	#book {
+		margin-bottom: 10rem;
 		article {
 			padding-left: 1rem;
 			padding-right: 1rem;
@@ -299,6 +308,9 @@ import drGreg from "../images/greg.jpg";
 			@media (min-width: 1500px) {
 				padding-left: 5rem;
 				padding-right: 5rem;
+			}
+			@media (min-width: 1800px) {
+				max-width: 60%;
 			}
 			p {
 				margin-bottom: 2rem;
@@ -312,7 +324,7 @@ import drGreg from "../images/greg.jpg";
 			height: 100vh;
 			overflow-x: hidden;
 			overflow-y: auto;
-			perspective: 10px;
+			perspective: 300px;
 		}
 		.wrapper::-webkit-scrollbar {
 			// hide the inner scrollbar defined above for parallax
@@ -345,13 +357,13 @@ import drGreg from "../images/greg.jpg";
 		}
 		.base-layer {
 			/* scale calculation: 1 + ((Z transform value * -1) / perspective) */
-			transform: translateZ(-5px) scale(1.5);
+			transform: translateZ(-300px) scale(2);
 		}
 		.mid-layer {
 			transform: translate(0);
 		}
 		.top-layer {
-			transform: translateZ(-5px) scale(1.5);
+			transform: translateZ(100px) scale(0.67);
 		}
 		#intro {
 			z-index: 0;
@@ -364,17 +376,12 @@ import drGreg from "../images/greg.jpg";
 				background-color: #262161;
 			}
 		}
-		#practice {
-			margin-bottom: 611px;
-		}
 	}
 </style>
 
 <script>
 	const target = document.querySelector("#about") as HTMLElement;
 	const menuIcon = document.querySelector("#menu .icon") as HTMLElement;
-	console.log(target);
-	console.log(menuIcon);
 
 	const options = {
 		root: null,
