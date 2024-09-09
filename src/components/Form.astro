@@ -16,6 +16,20 @@
 	<textarea name="message" id="message" required></textarea>
 
 	<button name="submit" class="btn" id="submit" type="submit" value="Send">
+		<svg
+			id="form-loading"
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			class="icon icon-tabler icons-tabler-outline icon-tabler-loader-2 hidden size-5 animate-spin"
+		>
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+			<path d="M12 3a9 9 0 1 0 9 9"></path>
+		</svg>
 		Submit
 	</button>
 
@@ -88,7 +102,11 @@
 				background: #fff;
 				color: #333;
 				cursor: pointer;
+				display: flex;
 				font-size: 1.5rem;
+				gap: 0.5rem;
+				justify-content: center;
+				align-items: center;
 				margin: 2rem auto;
 				padding: 0.5rem;
 				@media (min-width: 768px) {
@@ -100,42 +118,72 @@
 			&.success,
 			&.error {
 				border-radius: 0.5rem;
-				bottom: 1rem;
+				bottom: 25%;
 				display: flex;
+				font-weight: 500;
 				margin-left: auto;
 				margin-right: auto;
 				opacity: 0;
 				position: fixed;
 				padding: 0;
-				transition-duration: 0.3s;
+				transition-duration: 0.5s;
 				visibility: hidden;
 				z-index: 10;
+				width: 500px;
+				height: 250px;
 				> div {
 					text-align: center;
 					padding: 1rem;
 				}
 			}
 			&.success {
-				background-color: rgb(187 247 208);
+				background-color: rgb(255 255 255);
 				color: rgb(22 101 52);
+				a {
+					color: rgb(22 101 52);
+				}
 			}
 			&.error {
-				background-color: rgb(254 202 202);
+				background-color: rgb(255 255 255);
 				color: rgb(153 27 27);
+				a {
+					color: rgb(153 27 27);
+				}
+			}
+		}
+		.animate-spin {
+			animation: spin 1s linear infinite;
+		}
+		.size-5 {
+			width: 1.25rem;
+			height: 1.25rem;
+		}
+		@keyframes spin {
+			from {
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(360deg);
 			}
 		}
 	</style>
 
 	<script>
 		// handle the form submission
-		var xhr = new XMLHttpRequest();
+		let xhr = new XMLHttpRequest();
 
 		// only one contact form supported per page
 		const form = document.getElementById("contact-form") as HTMLFormElement;
+		const formLoadingIndicator = document.getElementById("form-loading");
+		const formGoodFeedback = document.getElementById("form-good-feedback");
+		const formBadFeedback = document.getElementById("form-bad-feedback");
 
 		const handleFormSubmission = (event: Event) => {
 			// prevent page from reloading
 			event.preventDefault();
+
+			// show loading indicator
+			formLoadingIndicator?.classList.remove("hidden");
 
 			// get form data
 			const formData = new FormData(form);
@@ -151,6 +199,7 @@
 
 			// once we get a response...
 			xhr.onload = function () {
+				formLoadingIndicator?.classList.add("hidden");
 				const response = JSON.parse(xhr.response);
 
 				if (xhr.status === 200) {
@@ -158,14 +207,40 @@
 					console.log("Form submitted successfully.");
 					// reset form on successful email send
 					form?.reset();
+					if (formGoodFeedback) {
+						formGoodFeedback.style.visibility = "visible";
+						formGoodFeedback.style.opacity = "1";
+
+						// reset form feedback after a few seconds
+						setTimeout(() => {
+							formGoodFeedback.style.opacity = "0";
+
+							setTimeout(() => {
+								formGoodFeedback.style.visibility = "hidden";
+							}, 300);
+						}, 5000);
+					}
 				} else {
 					const message =
 						"Form submission failed with error: " + response.error;
 					console.log(message);
+					// The request failed
+					if (formBadFeedback) {
+						formBadFeedback.style.visibility = "visible";
+						formBadFeedback.style.opacity = "1";
+
+						// reset form feedback after a few seconds
+						setTimeout(() => {
+							formBadFeedback.style.opacity = "0";
+
+							setTimeout(() => {
+								formBadFeedback.style.visibility = "hidden";
+							}, 300);
+						}, 7000);
+					}
 				}
 			};
 		};
-
 		form?.addEventListener("submit", handleFormSubmission, true);
 	</script>
 </form>
