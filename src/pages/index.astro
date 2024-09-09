@@ -47,11 +47,12 @@ import drGreg from "../images/greg.jpg";
 		<section id="practice" class="section p-group">
 			<div class="p-layer mid-layer practice-grid">
 				<h2>Areas of Practice</h2>
-				<p>
-					Fenix Therapeutic Services specializes in the following areas of
-					therapy:
-				</p>
 				<article>
+					<p>
+						Fenix Therapeutic Services specializes in the following areas of
+						therapy:
+					</p>
+
 					<ul role="list" class="link-card-grid hidden">
 						<Card
 							title="Cognitive Behavioral Therapy (CBT)"
@@ -165,8 +166,10 @@ import drGreg from "../images/greg.jpg";
 		max-height: 620px;
 		@media (min-width: 1024px) {
 			background-image: none;
-			margin-bottom: 460px;
-			//position: absolute;
+			margin-bottom: 720px;
+		}
+		@media (min-width: 1280px) {
+			margin-bottom: 625px;
 		}
 		@media (min-width: 1920px) {
 			margin-bottom: 960px;
@@ -271,17 +274,29 @@ import drGreg from "../images/greg.jpg";
 	#practice {
 		padding-left: 0;
 		padding-right: 0;
+		@media (min-width: 1024px) {
+			margin-bottom: 30rem;
+		}
+		@media (min-width: 1920px) {
+			margin-bottom: 0;
+		}
 		.practice-grid {
 			background-image: url(../images/bg-practice.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
 			font-weight: 500;
 			padding: 5rem;
-			> p {
-				text-align: center;
-				margin-bottom: 2rem;
+			@media (min-width: 1024px) {
+				padding: 35rem 5rem;
+			}
+			@media (min-width: 1280px) {
+				padding: 30rem 5rem;
 			}
 			article {
+				p {
+					text-align: center;
+					margin-bottom: 2rem;
+				}
 				@media (min-width: 1920px) {
 					max-width: 60%;
 				}
@@ -305,6 +320,9 @@ import drGreg from "../images/greg.jpg";
 	}
 	#book {
 		margin-bottom: 10rem;
+		@media (min-width: 1024px) {
+			margin-bottom: 15rem;
+		}
 		article {
 			padding-left: 1rem;
 			padding-right: 1rem;
