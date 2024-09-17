@@ -111,11 +111,24 @@ import drGreg from "../images/greg.jpg";
 						available Monday through Friday from 8am to 1pm, and weekend
 						sessions under special circumstances.
 					</p>
+					<p class="pre-list">He accepts the following insurance:</p>
+					<ul class="insurance">
+						<li>Aetna</li>
+						<li>BlueCross and BlueShield</li>
+						<li>Cigna and Evernorth</li>
+						<li>Coventry</li>
+						<li>Florida Blue</li>
+						<li>New Directions | Lucet</li>
+						<li>Optum</li>
+						<li>Oscar Health</li>
+						<li>United Medical Resources (UMR)</li>
+						<li>UnitedHealthcare UHC | UBH</li>
+					</ul>
 					<p>
-						The fee for an hour session is $150, but Fenix Therapeutic Services
-						offers a sliding scale for those who qualify. MasterCard, Visa,
-						Zelle, and Cashapp are accepted, making it easy for clients to
-						access the help they need.
+						If you prefer, the fee for an hour session is $150, but Fenix
+						Therapeutic Services offers a sliding scale for those who qualify.
+						MasterCard, Visa, Zelle, and Cashapp are accepted, making it easy
+						for clients to access the help they need.
 					</p>
 					<p>
 						Ready to take the next step? Fill out the form below to schedule
@@ -340,6 +353,17 @@ import drGreg from "../images/greg.jpg";
 			}
 			p {
 				margin-bottom: 2rem;
+				&.pre-list {
+					margin-bottom: 0;
+				}
+			}
+			ul.insurance {
+				margin-bottom: 2rem;
+				margin-left: 2rem;
+				@media (min-width: 1024px) {
+					display: grid;
+					grid-template-columns: repeat(2, 375px);
+				}
 			}
 		}
 	}
