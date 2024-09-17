@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.2",
+    "@astrojs/partytown": "^2.1.2",
     "@fontsource-variable/montserrat": "^5.0.19",
     "@tabler/icons": "^3.15.0",
     "astro": "^4.13.3",

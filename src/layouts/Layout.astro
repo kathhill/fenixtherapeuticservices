@@ -3,6 +3,7 @@
 import "@fontsource-variable/montserrat";
 import "../styles/global.scss";
 import Navigation from "../components/Navigation.astro";
+import External from "../components/External.astro";
 
 interface Props {
 	title: string;
@@ -22,6 +23,7 @@ const year = new Date().getFullYear();
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<External />
 	</head>
 	<body id={page}>
 		<a class="sr-only focus:not-sr-only skip-link" href="#about"
@@ -51,8 +53,7 @@ const year = new Date().getFullYear();
 				Services. All rights reserved.
 			</p>
 		</footer>
-	</body>
-	<script is:inline data-astro-rerun>
+	</body><script is:inline data-astro-rerun>
 		document.getElementById("footer-year").innerText = new Date().getFullYear();
 
 		document.querySelector("nav input").onclick = function () {
