@@ -16,12 +16,25 @@ import drGreg from "../images/greg.jpg";
 >
 	<main class="wrapper">
 		<section class="hero p-group intro-screen" id="intro">
-			<video autoplay loop muted playsinline class="video">
-				<source src={oceansunrise} />
+			<video
+				loop
+				muted
+				playsinline
+				preload="none"
+				autoplay
+				class="video"
+				id="video"
+			>
+				<source src={oceansunrise} type="video/mp4" />
 			</video>
 			<div class="viewport-header">
 				<h1>
-					<Image class="logo" src={logo} alt="Fenix Therapeutic Services" />
+					<Image
+						class="logo"
+						src={logo}
+						loading="eager"
+						alt="Fenix Therapeutic Services"
+					/>
 				</h1>
 				<h2>
 					Welcome to Fenix Therapeutic Services, where your journey to healing
@@ -440,6 +453,7 @@ import drGreg from "../images/greg.jpg";
 </style>
 
 <script>
+	// handle adding link to top using intersection observer
 	const target = document.querySelector("#about") as HTMLElement;
 	const menuIcon = document.querySelector("#menu .icon") as HTMLElement;
 	const wrapper = document.querySelector(".wrapper") as HTMLObjectElement;
@@ -473,4 +487,13 @@ import drGreg from "../images/greg.jpg";
 
 	const observer = new IntersectionObserver(handleIntersection, options);
 	observer.observe(target);
+</script>
+<script>
+	const video = document.getElementById("video");
+
+	document.addEventListener("DOMContentLoaded", function addAutoplay() {
+		if (window.innerWidth < 1024) {
+			video?.removeAttribute("autoplay");
+		}
+	});
 </script>
