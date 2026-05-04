@@ -5,7 +5,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://fenixtherapeuticservices.com',
+  site: 'https://www.fenixtherapeuticservices.com',
   integrations: [
     partytown(),
     sitemap({
@@ -13,5 +13,5 @@ export default defineConfig({
       priority: 0.85,
       lastmod: new Date(),
     }),
-  ],
+  ],  
 }); 
