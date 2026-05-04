@@ -46,14 +46,14 @@ html {
 		min-height: 100vh;
 	}
 	h1 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		font-weight: 500;
 	}
 	h2 {
 		font-size: 1.5rem;
 		font-weight: 500;
 		line-height: 1.5;
-		margin-bottom: 2rem;
+		margin-bottom: 1.5rem;
 		padding-top: 3rem;
 		@media (min-width: 1024px) {
 			font-size: 2rem;
@@ -67,6 +67,7 @@ html {
 	}
 	p {
 		font-size: 1.2rem;
+		margin-bottom: 1.5rem;
 	}
 	img {
 		display: block;
@@ -313,4 +314,17 @@ footer {
 	html {
 		scroll-behavior: auto;
 	}
+}
+
+.ref {
+	list-style: none;
+	margin-bottom: 2rem;
+	li {
+		padding-left: 4em;
+		text-indent: -4em;
+	}
+}
+
+.text-underline {
+	text-decoration: underline;
 }

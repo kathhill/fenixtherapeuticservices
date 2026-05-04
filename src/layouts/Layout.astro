@@ -22,9 +22,10 @@ const year = new Date().getFullYear();
 		<title>{title}</title>
 		<External />
 		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<link rel="sitemap" href="/sitemap-index.xml" />
+		<link rel="canonical" href="https://wwww.fenixtherapeuticservices.com/" />
 		<meta name="generator" content={Astro.generator} />
 	</head>
 	<body id={page}>
@@ -65,7 +66,7 @@ const year = new Date().getFullYear();
 	<script>
 		const menu = document.getElementById("menu") as HTMLElement;
 		const menuToggle = document.getElementById(
-			"menu-toggle"
+			"menu-toggle",
 		) as HTMLFormElement;
 
 		menu.addEventListener("click", handleMenuClick);

@@ -43,7 +43,7 @@ import drGreg from "../images/greg.jpg";
 			</div>
 		</section>
 		<section id="about" class="section p-group">
-			<div class="p-layer base-layer about-grid">
+			<div class="p-layer about-grid">
 				<h2>About Fenix Therapeutic Services</h2>
 				<div>
 					<Image src={drGreg} alt="Gregory Harmeling, Psy.D." />
@@ -52,8 +52,9 @@ import drGreg from "../images/greg.jpg";
 						Harmeling, Psy.D., a Licensed Marriage and Family Therapist with
 						over a decade of experience, dedicated to helping individuals
 						navigate their mental health challenges with compassion and empathy.
-						Read more <a href="/about">about Dr. Harmeling and his experience</a
-						>.
+						<a href="/about">
+							Read more about Dr. Harmeling and his experience
+						</a>.
 					</p>
 				</div>
 			</div>
@@ -294,11 +295,7 @@ import drGreg from "../images/greg.jpg";
 			margin-bottom: 1.5rem;
 			flex: 1;
 			padding: 1rem;
-			a,
-			a:link {
-				color: #fff;
-				text-decoration: none;
-			}
+
 			@media (min-width: 1024px) {
 				max-width: 60%;
 			}
@@ -459,7 +456,7 @@ import drGreg from "../images/greg.jpg";
 	const wrapper = document.querySelector(".wrapper") as HTMLObjectElement;
 	let scrollPosition = 0;
 
-	wrapper.addEventListener("scroll", (event) => {
+	wrapper.addEventListener("scroll", () => {
 		scrollPosition = wrapper.scrollTop;
 		return scrollPosition;
 	});
