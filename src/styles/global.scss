@@ -50,17 +50,16 @@ html {
 		font-weight: 500;
 	}
 	h2 {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		font-weight: 500;
 		line-height: 1.5;
 		margin-bottom: 1.5rem;
-		padding-top: 3rem;
 		@media (min-width: 1024px) {
 			font-size: 2rem;
 		}
 	}
 	h3 {
-		font-size: 1.25rem;
+		font-size: 1rem;
 		font-weight: 500;
 		line-height: 1.2;
 		margin-bottom: 1rem;
@@ -313,15 +312,6 @@ footer {
 @media screen and (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
-	}
-}
-
-.ref {
-	list-style: none;
-	margin-bottom: 2rem;
-	li {
-		padding-left: 4em;
-		text-indent: -4em;
 	}
 }
 

@@ -1,0 +1,147 @@
+---
+import "@fontsource-variable/montserrat";
+import "../styles/global.scss";
+import Navigation from "../components/Navigation.astro";
+import External from "../components/External.astro";
+
+interface Props {
+	page: string;
+	frontmatter: {
+		title: string;
+		description: string;
+		pubDate: string;
+		author: string;
+		image: {
+			url: string;
+			alt: string;
+			width: string;
+		};
+	};
+}
+
+const { page, frontmatter } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<head>
+	<meta charset="UTF-8" />
+	<title>{frontmatter.title}</title>
+	<External />
+	<meta name="description" content={frontmatter.description} />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="sitemap" href="/sitemap-index.xml" />
+	<link rel="canonical" href="https://wwww.fenixtherapeuticservices.com/" />
+	<meta name="generator" content={Astro.generator} />
+</head>
+<body id={page}>
+	<a class="sr-only focus:not-sr-only skip-link" href="#about">
+		Skip to main content
+	</a>
+	<header class="navbar">
+		<nav class="navbar-container">
+			<input
+				type="checkbox"
+				id="menu-toggle"
+				aria-label="Display the menu"
+				aria-controls="menu"
+			/>
+			<label class="menu-btn" for="menu-toggle">
+				<span></span>
+			</label>
+			<Navigation />
+		</nav>
+	</header>
+	<main class="wrapper">
+		<section>
+			<article>
+				<p>
+					Published on: {frontmatter.pubDate.toString().slice(0, 15)}<br />By {
+						frontmatter.author
+					}
+				</p>
+				<img
+					class="post-img"
+					src={frontmatter.image.url}
+					alt={frontmatter.image.alt}
+					width={frontmatter.image.width}
+				/>
+				<slot />
+			</article>
+		</section>
+	</main>
+	<footer>
+		<p>
+			&copy;<span id="footer-year">{year}</span>&nbsp;Fenix Therapeutic
+			Services. All rights reserved.
+		</p>
+	</footer>
+	<style is:global lang="scss">
+		section {
+			padding: 5rem 5rem 10rem;
+			article {
+				margin: 0 auto;
+				h1,
+				h2 {
+					margin-bottom: 2rem;
+				}
+				h1 {
+					font-size: 2rem;
+				}
+				h2 {
+					font-size: 1.5rem;
+				}
+				p {
+					margin-bottom: 2rem;
+				}
+				@media (min-width: 768px) {
+					img {
+						margin-bottom: 3rem;
+						width: 90%;
+					}
+				}
+				@media (min-width: 1500px) {
+					max-width: 60%;
+				}
+			}
+		}
+
+		hr {
+			margin-bottom: 3rem;
+		}
+
+		#references + ul {
+			list-style: none;
+			margin-bottom: 2rem;
+			li {
+				padding-left: 4em;
+				text-indent: -4em;
+
+				p {
+					font-size: 1rem;
+				}
+			}
+		}
+	</style>
+</body>
+
+<script is:inline data-astro-rerun>
+	document.getElementById("footer-year").innerText = new Date().getFullYear();
+
+	document.querySelector("nav input").onclick = function () {
+		if (this.checked) this.setAttribute("aria-expanded", true);
+		else this.setAttribute("aria-expanded", false);
+	};
+</script>
+<script>
+	const menu = document.getElementById("menu") as HTMLElement;
+	const menuToggle = document.getElementById("menu-toggle") as HTMLFormElement;
+
+	menu.addEventListener("click", handleMenuClick);
+
+	function handleMenuClick(event: Event) {
+		if (event.target instanceof HTMLAnchorElement) {
+			menuToggle.checked = false;
+		}
+	}
+</script>

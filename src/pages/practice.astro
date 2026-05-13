@@ -8,13 +8,13 @@ import Layout from "../layouts/Layout.astro";
 	description="Read more about the areas of therapy that Fenix Therapeutic Services specializes in to help you with your mental health."
 >
 	<main class="wrapper">
-		<div class="hero"></div>
+		<div class="hero"><h1>Areas of Practice</h1></div>
 		<section>
 			<article>
-				<h1>
+				<h2>
 					Fenix Therapeutic Services specializes in the following areas of
 					therapy:
-				</h1>
+				</h2>
 				<dl>
 					<dt id="cbt">Cognitive Behavioral Therapy (CBT)</dt>
 					<dd>
@@ -121,24 +121,36 @@ import Layout from "../layouts/Layout.astro";
 		background-position: center center;
 		width: 100vw;
 		height: 600px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		@media (max-width: 1023px) {
 			height: 400px;
+		}
+		h1 {
+			font-size: xx-large;
+			text-align: center;
+
+			@media (min-width: 1024px) {
+				font-size: xxx-large;
+			}
 		}
 	}
 	section {
 		padding: 2rem;
+		margin-bottom: 3rem;
 		@media (min-width: 1024px) {
-			padding: 10rem 5rem;
+			padding: 0 5rem 10rem;
 		}
 		article {
 			margin: 0 auto;
-			h1 {
+			h2 {
 				margin-bottom: 2rem;
 			}
 			dl {
 				dt {
 					font-size: 1.25rem;
-					font-weight: 500;
+					font-weight: 700;
 				}
 				dd {
 					margin-bottom: 2rem;
