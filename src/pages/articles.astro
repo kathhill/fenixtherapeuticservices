@@ -1,42 +1,61 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import post1thumb from "../images/thumb-post1.jpg";
+import post2thumb from "../images/thumb-post2.jpg";
+
+const allPosts = await getCollection("blog");
+
+const posts = allPosts
+	.map((post) => ({
+		id: post.data.id,
+		slug: post.data.slug,
+		title: post.data.title,
+		description: post.data.description,
+		imageUrl: post.data.imageUrl,
+		imageAlt: post.data.imageAlt,
+		pubDate: post.data.pubDate,
+		author: post.data.author,
+		category: post.data.category,
+		// readTime: post.data.readTime,
+	}))
+	.sort((a, b) => b.pubDate.localeCompare(a.pubDate));
 ---
 
 <Layout page="articles" title="" description="">
 	<main class="wrapper">
 		<div class="hero"><h1>Articles by Greg Harmeling, Psy.D., LMFT</h1></div>
 
-		<section class="article-grid">
-			<article>
-				<img src="/src/images/thumb-post1.jpg" alt="" class="post-thumb" />
-				<div class="post-blurb">
-					<h2>
-						How Narcissistic Abuse Rewires a Man's Sexuality — and How to Heal
-					</h2>
-					<p>
-						Narcissistic abuse doesn't just damage your sense of self; it
-						rewires how you experience sexuality and intimacy.<br /><a
-							href="./posts/post-1"
-						>
-							Read more....
-						</a>
-					</p>
-				</div>
-			</article>
-			<article>
-				<img src="/src/images/thumb-post2.jpg" alt="" class="post-thumb" />
-				<div class="post-blurb">
-					<h2>
-						Why Men Lose Sexual Confidence After a Toxic Relationship — and How
-						to Get It Back
-					</h2>
-					<p>
-						Toxic relationships don't just hurt your heart — they damage your
-						sexual confidence in ways nobody warns you about.
-						<br /><a href="./posts/post-2">Read more....</a>
-					</p>
-				</div>
-			</article>
+		<section>
+			<ul class="article-grid">
+				<!-- TODO: create a component for this. -->
+				{
+					posts.map((post) => (
+						<li>
+							<img
+								src={`/images/posts/thumb-post${post.id}.jpg`}
+								alt={post.imageAlt || post.title}
+								class="post-thumb"
+							/>
+							<div class="post-blurb">
+								{/* TODO: add categories and read time functionality back in. */}
+								{/* <p>
+									{post.category} · {post.readTime} min read
+								</p> */}
+								<h2>{post.title}</h2>
+								<p>{post.description}</p>
+								<p>
+									{post.pubDate} — {post.author}
+								</p>
+								<p>
+									<a href={`/blog/${post.slug}`}>Read more...</a>
+								</p>
+							</div>
+						</li>
+					))
+				}
+			</ul>
 		</section>
 	</main></Layout
 >
@@ -70,7 +89,8 @@ import Layout from "../layouts/Layout.astro";
 		max-width: 1200px;
 		margin: 0 auto 5rem;
 
-		article {
+		article,
+		li {
 			background: #8d89b7;
 			border: 1px solid #bab7d5;
 			border-radius: 8px;
@@ -79,6 +99,9 @@ import Layout from "../layouts/Layout.astro";
 			flex-direction: column;
 
 			.post-thumb {
+				object-fit: cover;
+				width: 100%;
+				height: 200px;
 			}
 
 			.post-blurb {

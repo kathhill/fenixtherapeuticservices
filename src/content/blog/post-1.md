@@ -1,18 +1,19 @@
 ---
-layout: ../../layouts/PostLayout.astro
+# layout: ../../layouts/PostLayout.astro
+id: 1
+slug: "how-narcissistic-abuse-rewires-a-mans-sexuality"
 title: "How Narcissistic Abuse Rewires a Man's Sexuality — and How to Heal"
-pubDate: "May 4, 2026"
 description: "Narcissistic abuse doesn't just damage your sense of self; it rewires how you experience sexuality and intimacy. Licensed therapist Gregory Harmeling, Psy.D., LMFT, explains what's really happening, why men rarely connect the dots, and what recovery actually looks like."
+imageUrl: "/images/posts/pensive-man.jpg"
+imageAlt: ""
+pubDate: "May 4, 2026"
 author: "Gregory Harmeling, Psy.D., LMFT"
-image:
-    url: "/src/images/pensive-man.jpg"
-    alt: ""
-    width: ""
+category: ""
 tags: [""]
 ---
 # How Narcissistic Abuse Rewires a Man's Relationship with His Own Sexuality — and What Recovery Actually Looks Like
 
-There's a conversation I have fairly often in my therapy practice that goes something like this:<br />
+There's a conversation I have fairly often in my therapy practice that goes something like this:
 A man sits across from me, somewhere between confused and defeated, and says that since his last relationship ended, something feels off. He's not interested in sex the way he used to be. Or he's overly interested, but it feels compulsive and empty. Or he tries to be intimate with someone new, and his body doesn't cooperate. He's anxious in ways he can't pinpoint. He second-guesses himself constantly.
 
 Then he says the thing they almost all say: "I don't know what's wrong with me."

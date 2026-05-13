@@ -11,11 +11,9 @@ interface Props {
 		description: string;
 		pubDate: string;
 		author: string;
-		image: {
-			url: string;
-			alt: string;
-			width: string;
-		};
+		imageUrl: string | undefined;
+		imageAlt: string | undefined;
+		readTime: number | undefined;
 	};
 }
 
@@ -62,9 +60,8 @@ const year = new Date().getFullYear();
 				</p>
 				<img
 					class="post-img"
-					src={frontmatter.image.url}
-					alt={frontmatter.image.alt}
-					width={frontmatter.image.width}
+					src={frontmatter.imageUrl}
+					alt={frontmatter.imageAlt}
 				/>
 				<slot />
 			</article>
