@@ -6,7 +6,7 @@ title: "How Narcissistic Abuse Rewires a Man's Sexuality — and How to Heal"
 description: "Narcissistic abuse doesn't just damage your sense of self; it rewires how you experience sexuality and intimacy. Licensed therapist Gregory Harmeling, Psy.D., LMFT, explains what's really happening, why men rarely connect the dots, and what recovery actually looks like."
 imageUrl: "/images/posts/pensive-man.jpg"
 imageAlt: ""
-pubDate: "May 4, 2026"
+pubDate: "2026-05-04"
 author: "Gregory Harmeling, Psy.D., LMFT"
 category: ""
 tags: [""]

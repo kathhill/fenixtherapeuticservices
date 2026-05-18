@@ -6,7 +6,7 @@ title: "Why Men Lose Sexual Confidence After a Toxic Relationship — and How to
 description: "Toxic relationships don't just hurt your heart — they damage your sexual confidence in ways nobody warns you about. Licensed therapist Gregory Harmeling, Psy.D., LMFT explains what happens, why it's not your fault, and how to get it back."
 imageUrl: "/images/posts/silhouette-of-man-looking-at-sunset-cropped.jpg"
 imageAlt: ""
-pubDate: "May 11, 2026"
+pubDate: "2026-05-11"
 category: "General"
 author: "Gregory Harmeling, Psy.D., LMFT"
 tags: [""]

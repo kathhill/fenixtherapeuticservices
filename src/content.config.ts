@@ -15,7 +15,7 @@ const blog = defineCollection({
     description: z.string(),
     imageUrl: z.string().optional(),
     imageAlt: z.string().optional(),
-    pubDate: z.string(),
+    pubDate: z.coerce.date(),
     author: z.string().default('Gregory Harmeling, Psy.D., LMFT'),
     category: z.string().default('General'),
     readTime: z.number().optional(),

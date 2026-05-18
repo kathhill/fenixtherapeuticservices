@@ -1,13 +1,16 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
-import { Image } from "astro:assets";
-import post1thumb from "../images/thumb-post1.jpg";
-import post2thumb from "../images/thumb-post2.jpg";
 
 const allPosts = await getCollection("blog");
 
-const posts = allPosts
+const sortedPosts = allPosts.sort((a, b) => {
+	return (
+		new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+	);
+});
+
+const posts = sortedPosts
 	.map((post) => ({
 		id: post.data.id,
 		slug: post.data.slug,
@@ -20,7 +23,7 @@ const posts = allPosts
 		category: post.data.category,
 		// readTime: post.data.readTime,
 	}))
-	.sort((a, b) => b.pubDate.localeCompare(a.pubDate));
+	.slice(0, 6);
 ---
 
 <Layout page="articles" title="" description="">
@@ -33,11 +36,13 @@ const posts = allPosts
 				{
 					posts.map((post) => (
 						<li>
-							<img
-								src={`/images/posts/thumb-post${post.id}.jpg`}
-								alt={post.imageAlt || post.title}
-								class="post-thumb"
-							/>
+							<a href={`/blog/${post.slug}`}>
+								<img
+									src={`/images/posts/thumb-post${post.id}.jpg`}
+									alt={post.imageAlt || post.title}
+									class="post-thumb"
+								/>
+							</a>
 							<div class="post-blurb">
 								{/* TODO: add categories and read time functionality back in. */}
 								{/* <p>
@@ -46,7 +51,7 @@ const posts = allPosts
 								<h2>{post.title}</h2>
 								<p>{post.description}</p>
 								<p>
-									{post.pubDate} — {post.author}
+									{post.pubDate.toString().slice(0, 15)} <br /> {post.author}
 								</p>
 								<p>
 									<a href={`/blog/${post.slug}`}>Read more...</a>
