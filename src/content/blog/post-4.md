@@ -89,10 +89,10 @@ That’s where recovery starts. It starts with the truth.
 
 ### References
 
-- Dokkedahl, S. B., Kirubakaran, R., Bech-Hansen, D., Kristensen, T. R., & Elklit, A. (2022). The psychological subtype of intimate partner violence and its effect on mental health: A systematic review with meta-analyses. Systematic Reviews, 11, Article 163. [https://doi.org/10.1186/s13643-022-02025-z](https://doi.org/10.1186/s13643-022-02025-z)
+- Dokkedahl, S. B., Kirubakaran, R., Bech-Hansen, D., Kristensen, T. R., & Elklit, A. (2022). The psychological subtype of intimate partner violence and its effect on mental health: A systematic review with meta-analyses. *Systematic Reviews, 11*, Article 163. [https://doi.org/10.1186/s13643-022-02025-z](https://doi.org/10.1186/s13643-022-02025-z)
 
-- Lyons, M., Houghton, E., Brewer, G., & O’Brien, F. (2020). The Dark Triad and sexual assertiveness predict sexual coercion differently in men and women. Journal of Interpersonal Violence, 37(5–6), NP2943–NP2964. [https://doi.org/10.1177/0886260520922346](https://doi.org/10.1177/0886260520922346)
+- Lyons, M., Houghton, E., Brewer, G., & O’Brien, F. (2020). The Dark Triad and sexual assertiveness predict sexual coercion differently in men and women. *Journal of Interpersonal Violence, 37*(5–6), NP2943–NP2964. [https://doi.org/10.1177/0886260520922346](https://doi.org/10.1177/0886260520922346)
 
-- Scott-Storey, K., O’Donnell, S., Ford-Gilboe, M., Varcoe, C., Wathen, N., Malcolm, J., & Vincent, C. (2023). What about the men? A critical review of men’s experiences of intimate partner violence. Trauma, Violence, & Abuse, 24(2), 858–872. [https://doi.org/10.1177/15248380211043827](https://doi.org/10.1177/15248380211043827)
+- Scott-Storey, K., O’Donnell, S., Ford-Gilboe, M., Varcoe, C., Wathen, N., Malcolm, J., & Vincent, C. (2023). What about the men? A critical review of men’s experiences of intimate partner violence. *Trauma, Violence, & Abuse, 24*(2), 858–872. [https://doi.org/10.1177/15248380211043827](https://doi.org/10.1177/15248380211043827)
 
 - U.S. Department of Veterans Affairs, National Center for PTSD. (n.d.). Sexual assault experienced as an adult. [https://www.ptsd.va.gov/professional/treat/type/sexual_assault_adult.asp](https://www.ptsd.va.gov/professional/treat/type/sexual_assault_adult.asp)

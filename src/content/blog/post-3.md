@@ -87,6 +87,6 @@ That’s usually the hardest part. It’s also usually where things begin to shi
 
 ### References
 
-- Gordon, A. M. (2018). How men experience sexual shame: The development and validation of the Male Sexual Shame Scale. Journal of Men’s Studies, 26(1), 105–123. [https://doi.org/10.1177/1060826517728303](https://doi.org/10.1177/1060826517728303)
-- Green, A., & Charles, K. (2019). Voicing the victims of narcissistic partners: A qualitative analysis of responses to narcissistic injury and self-esteem regulation. SAGE Open, 9(2). [https://doi.org/10.1177/2158244019846693](https://doi.org/10.1177/2158244019846693)
-- Scott-Storey, K., O’Donnell, S., Ford-Gilboe, M., Varcoe, C., Wathen, N., Malcolm, J., & Vincent, C. (2023). What about the men? A critical review of men’s experiences of intimate partner violence. Trauma, Violence, & Abuse, 24(2), 858–872. [https://doi.org/10.1177/15248380211043827](https://doi.org/10.1177/15248380211043827)
+- Gordon, A. M. (2018). How men experience sexual shame: The development and validation of the Male Sexual Shame Scale. *Journal of Men’s Studies, 26*(1), 105–123. [https://doi.org/10.1177/1060826517728303](https://doi.org/10.1177/1060826517728303)
+- Green, A., & Charles, K. (2019). Voicing the victims of narcissistic partners: A qualitative analysis of responses to narcissistic injury and self-esteem regulation. *SAGE Open, 9*(2). [https://doi.org/10.1177/2158244019846693](https://doi.org/10.1177/2158244019846693)
+- Scott-Storey, K., O’Donnell, S., Ford-Gilboe, M., Varcoe, C., Wathen, N., Malcolm, J., & Vincent, C. (2023). What about the men? A critical review of men’s experiences of intimate partner violence. *Trauma, Violence, & Abuse, 24*(2), 858–872. [https://doi.org/10.1177/15248380211043827](https://doi.org/10.1177/15248380211043827)

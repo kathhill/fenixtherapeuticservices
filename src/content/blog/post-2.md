@@ -89,8 +89,8 @@ That’s enough to begin.
 
 ### References
 
-- Benali, Y., El-Sayed, M., & El Amrani, Y. (2025). Impact of sexual self-esteem on emotional connection mediated by interpersonal vulnerability. Research and Practice in Couple Therapy, 3(2), 1–10. [https://doi.org/10.61838/rpct.3.2.4](https://doi.org/10.61838/rpct.3.2.4)
+- Benali, Y., El-Sayed, M., & El Amrani, Y. (2025). Impact of sexual self-esteem on emotional connection mediated by interpersonal vulnerability. *Research and Practice in Couple Therapy, 3*(2), 1–10. [https://doi.org/10.61838/rpct.3.2.4](https://doi.org/10.61838/rpct.3.2.4)
 
-- Hines, D. A., & Douglas, E. M. (2011). Symptoms of posttraumatic stress disorder in men who sustain intimate partner violence: A study of helpseeking and community samples. Psychology of Men & Masculinity, 12(2), 112–127. [https://doi.org/10.1037/a0022983](https://doi.org/10.1037/a0022983)
+- Hines, D. A., & Douglas, E. M. (2011). Symptoms of posttraumatic stress disorder in men who sustain intimate partner violence: A study of helpseeking and community samples. *Psychology of Men & Masculinity, 12*(2), 112–127. [https://doi.org/10.1037/a0022983](https://doi.org/10.1037/a0022983)
 
-- Scott-Storey, K., O’Donnell, S., Ford-Gilboe, M., Varcoe, C., Wathen, N., Malcolm, J., & Vincent, C. (2023). What about the men? A critical review of men’s experiences of intimate partner violence. Trauma, Violence, & Abuse, 24(2), 858–872. [https://doi.org/10.1177/15248380211043827](https://doi.org/10.1177/15248380211043827)
+- Scott-Storey, K., O’Donnell, S., Ford-Gilboe, M., Varcoe, C., Wathen, N., Malcolm, J., & Vincent, C. (2023). What about the men? A critical review of men’s experiences of intimate partner violence. *Trauma, Violence, & Abuse, 24*(2), 858–872. [https://doi.org/10.1177/15248380211043827](https://doi.org/10.1177/15248380211043827)
