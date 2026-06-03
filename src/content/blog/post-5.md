@@ -13,7 +13,7 @@ tags: [""]
 ---
 # Reclaiming Your Sexuality After Narcissistic Abuse: A Guide for Men
 
-## There is a particular kind of silence that follows the end of a narcissistic relationship.
+## There is a particular kind of silence that follows the end of a narcissistic relationship
 
 It is not the silence of peace. It is the silence of a man who no longer trusts himself, who has had his instincts questioned so many times that he has stopped listening to them, who used to feel comfortable in his own body and now does not quite know how to get back there.
 
