@@ -5,11 +5,11 @@ slug: "the-moment-the-fog-lifts-how-men-finally-recognize-they-were-in-a-narciss
 title: "The Moment the Fog Lifts: How Men Finally Recognize They Were in a Narcissistic Relationship"
 description: ""
 imageUrl: "/images/posts/article7hero.jpg"
-imageAlt: ""
+imageAlt: "Most men don't recognize narcissistic abuse while it's happening. Here's why the fog takes so long to lift, and what finally cuts through it."
 pubDate: "June 29, 2026"
 author: "Gregory Harmeling, Psy.D., LMFT"
 category: ""
-tags: [""]
+tags: ["men recognizing narcissistic abuse, narcissistic relationship fog, when do men realize they were abused, trauma bond awareness men"]
 ---
 # The Moment the Fog Lifts: How Men Finally Recognize They Were in a Narcissistic Relationship
 
