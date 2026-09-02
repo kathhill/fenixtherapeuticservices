@@ -66,14 +66,14 @@ Men who have lived under someone else's control often equate not knowing with no
 
 ### References
 
-- Buhr, K., & Dugas, M. J. (2002). The Intolerance of Uncertainty Scale: Psychometric properties of the English version. Behaviour Research and Therapy, 40(8), 931–945. [https://doi.org/10.1016/S0005-7967(01)00092-4](https://doi.org/10.1016/S0005-7967(01)00092-4)
+- Buhr, K., & Dugas, M. J. (2002). The Intolerance of Uncertainty Scale: Psychometric properties of the English version. *Behaviour Research and Therapy, 40(8)*, 931–945. [https://doi.org/10.1016/S0005-7967(01)00092-4](https://doi.org/10.1016/S0005-7967(01)00092-4)
 
-- Keltner, D., & Haidt, J. (2003). Approaching awe, a moral, spiritual, and aesthetic emotion. Cognition and Emotion, 17(2), 297–314. [https://doi.org/10.1080/02699930302297](https://doi.org/10.1080/02699930302297)
+- Keltner, D., & Haidt, J. (2003). Approaching awe, a moral, spiritual, and aesthetic emotion. *Cognition and Emotion, 17(2)*, 297–314. [https://doi.org/10.1080/02699930302297](https://doi.org/10.1080/02699930302297)
 
-- Madani, F., Gohary, A., & Chan, E. Y. (2020). Motivations behind visiting unplanned tourist attractions: An Iranian context. Current Issues in Tourism, 23(8), 947–951. [https://doi.org/10.1080/13683500.2019.1586845](https://doi.org/10.1080/13683500.2019.1586845)
+- Madani, F., Gohary, A., & Chan, E. Y. (2020). Motivations behind visiting unplanned tourist attractions: An Iranian context. *Current Issues in Tourism, 23(8)*, 947–951. [https://doi.org/10.1080/13683500.2019.1586845](https://doi.org/10.1080/13683500.2019.1586845)
 
-- Monroy, M., & Keltner, D. (2022). Awe as a pathway to mental and physical health. Perspectives on Psychological Science, 18(2), 309–320. [https://doi.org/10.1177/17456916221094856](https://doi.org/10.1177/17456916221094856)
+- Monroy, M., & Keltner, D. (2022). Awe as a pathway to mental and physical health. *Perspectives on Psychological Science, 18(2)*, 309–320. [https://doi.org/10.1177/17456916221094856](https://doi.org/10.1177/17456916221094856)
 
-- Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. American Psychologist, 55(1), 68–78. [https://doi.org/10.1037/0003-066X.55.1.68](https://doi.org/10.1037/0003-066X.55.1.68)
+- Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. *American Psychologist, 55(1)*, 68–78. [https://doi.org/10.1037/0003-066X.55.1.68](https://doi.org/10.1037/0003-066X.55.1.68)
 
 - Photo by [https://unsplash.com/@alingavriliuc](https://unsplash.com/@alingavriliuc)
