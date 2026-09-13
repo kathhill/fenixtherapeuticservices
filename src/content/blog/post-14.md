@@ -1,7 +1,7 @@
 ---
 # layout: ../../layouts/PostLayout.astro
 id: 14
-slug: "the-female narcissist-why-she-looks-different-and-why-shes-more-dangerous"
+slug: "the-female-narcissist-why-she-looks-different-and-why-shes-more-dangerous"
 title: "The Female Narcissist: Why She Looks Different and Why That Makes Her More Dangerous"
 description: "Female narcissism often hides behind warmth and competence, not grandiosity. Here's why the clinical picture misses her, and what to watch for instead."
 imageUrl: "/images/posts/article14hero.jpg"
