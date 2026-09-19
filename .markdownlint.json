@@ -1,0 +1,9 @@
+{
+  "MD013": false,
+  "MD033": {
+    "allowed_elements": ["br", "small", "span"]
+  },
+  "MD025": {
+    "front_matter_title": ""
+  }
+}
