@@ -8,7 +8,8 @@ imageUrl: "/images/posts/article7hero.jpg"
 imageAlt: ""
 pubDate: "June 29, 2026"
 author: "Gregory Harmeling, Psy.D., LMFT"
-category: ""
+category: "Narcissistic Abuse Recovery"
+readTime: 5
 tags: ["men recognizing narcissistic abuse, narcissistic relationship fog, when do men realize they were abused, trauma bond awareness men"]
 ---
 # The Moment the Fog Lifts: How Men Finally Recognize They Were in a Narcissistic Relationship

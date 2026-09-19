@@ -8,7 +8,8 @@ imageUrl: "/images/posts/article14hero.jpg"
 imageAlt: ""
 pubDate: "September 13, 2026"
 author: "Gregory Harmeling, Psy.D., LMFT"
-category: ""
+category: "Psychopathic and Narcissistic Women"
+readTime: 5
 tags: []
 ---
 
@@ -64,4 +65,4 @@ Recognizing the pattern is the first real step out of it. The rest of this pilla
 
 - Pinheiro, M., Gonçalves, R. A., & Cunha, O. (2024). Emotional processing and psychopathy among women: A systematic review. *Deviant Behavior, 45(10)*, 1366–1390. [https://doi.org/10.1080/01639625.2023.2295527](https://doi.org/10.1080/01639625.2023.2295527)
 
-<!-- - Photo by [https://unsplash.com/@bozgedik](https://unsplash.com/@bozgedik) -->
+- Photo by [https://unsplash.com/@binthieu](https://unsplash.com/@binthieu)

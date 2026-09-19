@@ -8,7 +8,8 @@ imageUrl: "/images/posts/sasha-yudaev-unsplash.jpg"
 imageAlt: ""
 pubDate: "May 18, 2026"
 author: "Gregory Harmeling, Psy.D., LMFT"
-category: ""
+category: "Men's Sexual Health"
+readTime: 5
 tags: [""]
 ---
 # The Link Between Sexual Shame and Narcissistic Abuse: What Men Need to Know

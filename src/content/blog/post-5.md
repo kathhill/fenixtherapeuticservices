@@ -8,7 +8,8 @@ imageUrl: "/images/posts/article5hero.jpg"
 imageAlt: ""
 pubDate: "June 1, 2026"
 author: "Gregory Harmeling, Psy.D., LMFT"
-category: ""
+category: "Men's Sexual Health"
+readTime: 5
 tags: [""]
 ---
 # Reclaiming Your Sexuality After Narcissistic Abuse: A Guide for Men

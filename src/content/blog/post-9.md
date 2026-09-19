@@ -8,7 +8,8 @@ imageUrl: "/images/posts/article9hero.jpg"
 imageAlt: ""
 pubDate: "August 3, 2026"
 author: "Gregory Harmeling, Psy.D., LMFT"
-category: ""
+category: "Travel Therapy"
+readTime: 5
 tags: []
 ---
 

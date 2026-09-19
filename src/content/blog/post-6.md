@@ -8,7 +8,8 @@ imageUrl: "/images/posts/article6hero.jpg"
 imageAlt: ""
 pubDate: "June 8, 2026"
 author: "Gregory Harmeling, Psy.D., LMFT"
-category: ""
+category: "Men's Sexual Health"
+readTime: 5
 tags: [""]
 ---
 # Why Men Don't Recognize Narcissistic Abuse Until It Shows Up in the Bedroom

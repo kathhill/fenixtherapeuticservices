@@ -21,7 +21,7 @@ const posts = sortedPosts
 		pubDate: post.data.pubDate,
 		author: post.data.author,
 		category: post.data.category,
-		// readTime: post.data.readTime,
+		readTime: post.data.readTime,
 	}))
 	.slice(0, 15);
 ---
@@ -44,10 +44,13 @@ const posts = sortedPosts
 								/>
 							</a>
 							<div class="post-blurb">
-								{/* TODO: add categories and read time functionality back in. */}
-								{/* <p>
-									{post.category} · {post.readTime} min read
-								</p> */}
+								{
+									<p>
+										{post.category}
+										<br />
+										{post.readTime} min read
+									</p>
+								}
 								<h2>{post.title}</h2>
 								<p>{post.description}</p>
 								<p>

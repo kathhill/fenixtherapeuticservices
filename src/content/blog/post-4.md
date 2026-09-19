@@ -8,7 +8,8 @@ imageUrl: "/images/posts/article4hero.jpg"
 imageAlt: ""
 pubDate: "May 25, 2026"
 author: "Gregory Harmeling, Psy.D., LMFT"
-category: ""
+category: "Men's Sexual Health"
+readTime: 5
 tags: [""]
 ---
 # When Sex Becomes a Weapon: Recognizing Sexual Coercion in Narcissistic Relationships

@@ -8,7 +8,8 @@ imageUrl: "/images/posts/article13hero.jpg"
 imageAlt: ""
 pubDate: "September 7, 2026"
 author: "Gregory Harmeling, Psy.D., LMFT"
-category: ""
+category: "Narcissistic Abuse Recovery"
+readTime: 5
 tags: []
 ---
 

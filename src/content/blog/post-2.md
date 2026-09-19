@@ -7,7 +7,8 @@ description: "Toxic relationships don't just hurt your heart — they damage you
 imageUrl: "/images/posts/silhouette-of-man-looking-at-sunset-cropped.jpg"
 imageAlt: ""
 pubDate: "2026-05-11"
-category: "General"
+category: "Men's Sexual Health"
+readTime: 5
 author: "Gregory Harmeling, Psy.D., LMFT"
 tags: [""]
 ---

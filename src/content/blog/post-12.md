@@ -8,7 +8,8 @@ imageUrl: "/images/posts/article12hero.jpg"
 imageAlt: ""
 pubDate: "August 31, 2026"
 author: "Gregory Harmeling, Psy.D., LMFT"
-category: ""
+category: "Men's Sexual Health"
+readTime: 5
 tags: []
 ---
 

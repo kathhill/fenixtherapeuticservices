@@ -8,7 +8,8 @@ imageUrl: "/images/posts/pensive-man.jpg"
 imageAlt: ""
 pubDate: "2026-05-04"
 author: "Gregory Harmeling, Psy.D., LMFT"
-category: ""
+category: "Men's Sexual Health"
+readTime: 5
 tags: [""]
 ---
 # How Narcissistic Abuse Rewires a Man's Relationship with His Own Sexuality — and What Recovery Actually Looks Like
