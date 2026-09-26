@@ -63,10 +63,10 @@ If you're strong enough to have built the life a narcissistic partner wanted acc
 
 ### References
 
-- Grapsas, S., Brummelman, E., Back, M. D., & Denissen, J. J. A. (2020). The "why" and "how" of narcissism: A process model of narcissistic status pursuit. Perspectives on Psychological Science, 15(1), 150–172. [https://doi.org/10.1177/1745691619873350](https://doi.org/10.1177/1745691619873350)
+- Grapsas, S., Brummelman, E., Back, M. D., & Denissen, J. J. A. (2020). The "why" and "how" of narcissism: A process model of narcissistic status pursuit. *Perspectives on Psychological Science, 15(1)*, 150–172. [https://doi.org/10.1177/1745691619873350](https://doi.org/10.1177/1745691619873350)
 
-- Green, A., MacLean, R., & Charles, K. (2020). Unmasking gender differences in narcissism within intimate partner violence. Personality and Individual Differences, 167, 110247. [https://doi.org/10.1016/j.paid.2020.110247](https://doi.org/10.1016/j.paid.2020.110247)
+- Green, A., MacLean, R., & Charles, K. (2020). Unmasking gender differences in narcissism within intimate partner violence. *Personality and Individual Differences, 167*, 110247. [https://doi.org/10.1016/j.paid.2020.110247](https://doi.org/10.1016/j.paid.2020.110247)
 
-- McLeod, D. A., Ozturk, B., Butler-King, R. L., & Peek, H. (2024). Male survivors of domestic violence, challenges in cultural response, and impact on identity and help-seeking behaviors: A systematic review. Trauma, Violence, & Abuse, 25(2), 1397–1410. [https://doi.org/10.1177/15248380231177318](https://doi.org/10.1177/15248380231177318)
+- McLeod, D. A., Ozturk, B., Butler-King, R. L., & Peek, H. (2024). Male survivors of domestic violence, challenges in cultural response, and impact on identity and help-seeking behaviors: A systematic review. *Trauma, Violence, & Abuse, 25(2)*, 1397–1410. [https://doi.org/10.1177/15248380231177318](https://doi.org/10.1177/15248380231177318)
 
 - Photo by [https://unsplash.com/@jovanowska](https://unsplash.com/@jovanowska)
