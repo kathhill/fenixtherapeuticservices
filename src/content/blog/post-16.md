@@ -1,7 +1,7 @@
 ---
 # layout: ../../layouts/PostLayout.astro
 id: 16
-slug: "why-narcissistic-abusers-target-strong-men"
+slug: "erectile-dysfunction-and-emotional-trauma-what-your-body-is-trying-to-tell-you"
 title: "Erectile Dysfunction and Emotional Trauma: What Your Body Is Trying to Tell You"
 description: "Erectile dysfunction isn't always physical. A therapist explains how stress and emotional trauma affect erections, and what your body may be telling you."
 imageUrl: "/images/posts/article16hero.jpg"
