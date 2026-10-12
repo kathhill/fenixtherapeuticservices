@@ -269,10 +269,14 @@ import drGreg from "../images/greg.jpg";
 			}
 		}
 		.video-toggle {
-			align-self: flex-end;
-			background: transparent;
-			border: none;
-			cursor: pointer;
+			display: none;
+			@media (min-width: 1024px) {
+				display: block;
+				align-self: flex-end;
+				background: transparent;
+				border: none;
+				cursor: pointer;
+			}
 			img {
 				height: 50px;
 				width: 50px;
