@@ -4,6 +4,8 @@ import Card from "../components/Card.astro";
 import Form from "../components/Form.astro";
 import { Image } from "astro:assets";
 import logo from "../images/logo-reverse-resized.png";
+import pauseIcon from "../images/pause-white.svg";
+import playIcon from "../images/play-white.svg";
 
 import oceansunrise from "../images/ocean-sunrise-compressed.mp4";
 import drGreg from "../images/greg.jpg";
@@ -15,7 +17,7 @@ import drGreg from "../images/greg.jpg";
 	description="Start your mental healing and growth journey by booking an appointment with Dr. Gregory Harmeling today"
 >
 	<main class="wrapper">
-		<section class="hero p-group intro-screen" id="intro">
+		<section class="hero intro-screen" id="intro">
 			<video
 				loop
 				muted
@@ -24,6 +26,7 @@ import drGreg from "../images/greg.jpg";
 				autoplay
 				class="video"
 				id="video"
+				aria-hidden="true"
 			>
 				<source src={oceansunrise} type="video/mp4" />
 			</video>
@@ -41,9 +44,24 @@ import drGreg from "../images/greg.jpg";
 					and personal growth begins.
 				</h2>
 			</div>
+			<!-- Accessibility Toggle Button -->
+			<button
+				id="video-toggle"
+				aria-label="Pause background video"
+				aria-pressed="false"
+				class="video-toggle"
+			>
+				<Image id="video-pause-icon" src={pauseIcon} alt="Pause video" />
+				<Image
+					id="video-play-icon"
+					src={playIcon}
+					alt="Play video"
+					class="hidden"
+				/>
+			</button>
 		</section>
-		<section id="about" class="section p-group">
-			<div class="p-layer about-grid">
+		<section id="about" class="section">
+			<div class="about-grid">
 				<h2>About Fenix Therapeutic Services</h2>
 				<div>
 					<Image src={drGreg} alt="Gregory Harmeling, Psy.D." />
@@ -51,7 +69,8 @@ import drGreg from "../images/greg.jpg";
 						Fenix Therapeutic Services is the online practice of Dr. Gregory
 						Harmeling, Psy.D., a Licensed Marriage and Family Therapist with
 						over a decade of experience, dedicated to helping individuals
-						navigate their mental health challenges with compassion and empathy.
+						navigate their mental health challenges with compassion and empathy.<br
+						/>
 						<a href="/about">
 							Read more about Dr. Harmeling and his experience
 						</a>.
@@ -59,8 +78,8 @@ import drGreg from "../images/greg.jpg";
 				</div>
 			</div>
 		</section>
-		<section id="practice" class="section p-group">
-			<div class="p-layer mid-layer practice-grid">
+		<section id="practice" class="section">
+			<div class="practice-grid">
 				<h2>Areas of Practice</h2>
 				<article>
 					<p>
@@ -108,49 +127,47 @@ import drGreg from "../images/greg.jpg";
 				</article>
 			</div>
 		</section>
-		<section id="book" class="section p-group">
-			<div class="p-layer top-layer">
-				<h2>Book a Session</h2>
-				<article>
-					<p>
-						Fenix Therapeutic Services offers online individual therapy
-						sessions, providing flexibility and convenience for clients.
-						Sessions range from 60 to 90 minutes, depending on the treatment
-						method used. Clients can expect a non-judgmental space to express
-						their thoughts and feelings, with many describing therapy with Dr.
-						Harmeling as akin to talking to a friend.
-					</p>
-					<p>
-						Dr. Harmeling's practice is solely telehealth, with sessions
-						available Monday through Friday from 8am to 1pm, and weekend
-						sessions under special circumstances.
-					</p>
-					<p class="pre-list">He accepts the following insurance:</p>
-					<ul class="insurance">
-						<li>Aetna</li>
-						<li>BlueCross and BlueShield</li>
-						<li>Cigna and Evernorth</li>
-						<li>Coventry</li>
-						<li>Florida Blue</li>
-						<li>New Directions | Lucet</li>
-						<li>Optum</li>
-						<li>Oscar Health</li>
-						<li>United Medical Resources (UMR)</li>
-						<li>UnitedHealthcare UHC | UBH</li>
-					</ul>
-					<p>
-						If you prefer, the fee for an hour session is $150, but Fenix
-						Therapeutic Services offers a sliding scale for those who qualify.
-						MasterCard, Visa, Zelle, and Cashapp are accepted, making it easy
-						for clients to access the help they need.
-					</p>
-					<p>
-						Ready to take the next step? Fill out the form below to schedule
-						your consultation and start your journey towards healing and growth.
-					</p>
-					<Form />
-				</article>
-			</div>
+		<section id="book" class="section">
+			<h2>Book a Session</h2>
+			<article>
+				<p>
+					Fenix Therapeutic Services offers online individual therapy sessions,
+					providing flexibility and convenience for clients. Sessions range from
+					60 to 90 minutes, depending on the treatment method used. Clients can
+					expect a non-judgmental space to express their thoughts and feelings,
+					with many describing therapy with Dr. Harmeling as akin to talking to
+					a friend.
+				</p>
+				<p>
+					Dr. Harmeling's practice is solely telehealth, with sessions available
+					Monday through Friday from 8am to 1pm, and weekend sessions under
+					special circumstances.
+				</p>
+				<p class="pre-list">He accepts the following insurance:</p>
+				<ul class="insurance">
+					<li>Aetna</li>
+					<li>BlueCross and BlueShield</li>
+					<li>Cigna and Evernorth</li>
+					<li>Coventry</li>
+					<li>Florida Blue</li>
+					<li>New Directions | Lucet</li>
+					<li>Optum</li>
+					<li>Oscar Health</li>
+					<li>United Medical Resources (UMR)</li>
+					<li>UnitedHealthcare UHC | UBH</li>
+				</ul>
+				<p>
+					If you prefer, the fee for an hour session is $150, but Fenix
+					Therapeutic Services offers a sliding scale for those who qualify.
+					MasterCard, Visa, Zelle, and Cashapp are accepted, making it easy for
+					clients to access the help they need.
+				</p>
+				<p>
+					Ready to take the next step? Fill out the form below to schedule your
+					consultation and start your journey towards healing and growth.
+				</p>
+				<Form />
+			</article>
 		</section>
 	</main>
 </Layout>
@@ -181,9 +198,9 @@ import drGreg from "../images/greg.jpg";
 		margin: 0 auto;
 	}
 	section {
-		padding: 1.5rem;
+		padding: 3rem 1.5rem;
 		@media (min-width: 1024px) {
-			padding: 0 5rem;
+			padding: 3rem 5rem;
 		}
 		h2 {
 			text-align: center;
@@ -192,21 +209,20 @@ import drGreg from "../images/greg.jpg";
 	.hero {
 		background-image: url(../images/ocean-sunrise-frame-0m16s.jpg);
 		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		height: 100vh;
 		width: 100vw;
-		max-height: 620px;
 		@media (min-width: 1024px) {
 			background-image: none;
-			margin-bottom: 1135px;
 		}
 		@media (min-width: 1366px) {
-			margin-bottom: 770px;
 		}
 		@media (min-width: 1638px) {
-			margin-bottom: 800px;
 		}
 		@media (min-width: 2560px) {
-			margin-bottom: 1130px;
 		}
 
 		.video {
@@ -231,15 +247,8 @@ import drGreg from "../images/greg.jpg";
 			align-items: center;
 			justify-content: center;
 			flex-direction: column;
-			opacity: 1;
 			opacity: var(--headerOpacity);
 			transform: scale(var(--headerScale));
-			@media (min-width: 1024px) {
-				margin-top: 35rem;
-			}
-			@media (min-width: 1920px) {
-				margin-top: 20rem;
-			}
 
 			h1 {
 				display: flex;
@@ -248,16 +257,25 @@ import drGreg from "../images/greg.jpg";
 					width: 100%;
 					height: auto;
 					@media (min-width: 1024px) {
-						width: 75%;
-						max-width: 1000px;
+						max-width: 670px;
 					}
 				}
 			}
 			h2 {
 				text-align: center;
 				@media (min-width: 1024px) {
-					width: 1000px;
+					width: 670px;
 				}
+			}
+		}
+		.video-toggle {
+			align-self: flex-end;
+			background: transparent;
+			border: none;
+			cursor: pointer;
+			img {
+				height: 50px;
+				width: 50px;
 			}
 		}
 	}
@@ -267,9 +285,6 @@ import drGreg from "../images/greg.jpg";
 		gap: 1.5rem;
 		padding: 0;
 		transition: all 3s ease-in;
-		@media (min-width: 1024px) {
-			margin: 0 10rem;
-		}
 
 		div {
 			@media (min-width: 768px) {
@@ -318,12 +333,10 @@ import drGreg from "../images/greg.jpg";
 			background-repeat: no-repeat;
 			background-size: cover;
 			font-weight: 500;
-			padding: 5rem;
+			padding: 1.5rem;
+
 			@media (min-width: 1024px) {
-				padding: 35rem 5rem;
-			}
-			@media (min-width: 1280px) {
-				padding: 30rem 5rem;
+				padding: 5rem;
 			}
 			article {
 				p {
@@ -357,39 +370,45 @@ import drGreg from "../images/greg.jpg";
 		@media (min-width: 1024px) {
 			margin-bottom: 15rem;
 		}
-		article {
-			padding-left: 1rem;
-			padding-right: 1rem;
+		div {
 			@media (min-width: 1024px) {
-				padding-left: 3rem;
-				padding-right: 3rem;
+				padding: 5rem;
 			}
-			@media (min-width: 1500px) {
-				padding-left: 5rem;
-				padding-right: 5rem;
-			}
-			@media (min-width: 1800px) {
-				max-width: 60%;
-			}
-			p {
-				margin-bottom: 2rem;
-				&.pre-list {
-					margin-bottom: 0;
-				}
-			}
-			ul.insurance {
-				margin-bottom: 2rem;
-				margin-left: 2rem;
+
+			article {
+				padding-left: 1rem;
+				padding-right: 1rem;
 				@media (min-width: 1024px) {
-					display: grid;
-					grid-template-columns: repeat(2, 375px);
+					padding-left: 3rem;
+					padding-right: 3rem;
+				}
+				@media (min-width: 1500px) {
+					padding-left: 5rem;
+					padding-right: 5rem;
+				}
+				@media (min-width: 1800px) {
+					max-width: 60%;
+				}
+				p {
+					margin-bottom: 2rem;
+					&.pre-list {
+						margin-bottom: 0;
+					}
+				}
+				ul.insurance {
+					margin-bottom: 2rem;
+					margin-left: 2rem;
+					@media (min-width: 1024px) {
+						display: grid;
+						grid-template-columns: repeat(2, 375px);
+					}
 				}
 			}
 		}
 	}
 
 	@media (min-width: 1024px) {
-		// parallax pieces
+		// 	// parallax pieces
 		.wrapper {
 			height: 100vh;
 			overflow-x: hidden;
@@ -399,52 +418,6 @@ import drGreg from "../images/greg.jpg";
 		.wrapper::-webkit-scrollbar {
 			// hide the inner scrollbar defined above for parallax
 			display: none;
-		}
-		.intro-screen {
-			height: 100vh;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		.p-group {
-			position: relative;
-			height: 100vh;
-			width: 100vw;
-			transform-style: preserve-3d;
-		}
-		.p-layer {
-			color: #fff;
-			position: absolute;
-			inset: 0;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-
-			a {
-				color: #fff;
-			}
-		}
-		.base-layer {
-			/* scale calculation: 1 + ((Z transform value * -1) / perspective) */
-			transform: translateZ(-300px) scale(2);
-		}
-		.mid-layer {
-			transform: translate(0);
-		}
-		.top-layer {
-			transform: translateZ(100px) scale(0.67);
-		}
-		#intro {
-			z-index: 0;
-		}
-		#about {
-			z-index: -1;
-			img {
-			}
-			> .base-layer {
-				background-color: #262161;
-			}
 		}
 	}
 </style>
@@ -476,8 +449,6 @@ import drGreg from "../images/greg.jpg";
 			if (entries[0].isIntersecting) {
 				targetClasses.remove("invisible");
 				menuIconClasses.remove("hidden");
-			} else if (!entries[0].isIntersecting && scrollPosition < 1005) {
-				menuIconClasses.add("hidden");
 			}
 		}
 	}
@@ -486,11 +457,30 @@ import drGreg from "../images/greg.jpg";
 	observer.observe(target);
 </script>
 <script>
-	const video = document.getElementById("video");
+	const video = document.getElementById("video") as HTMLVideoElement;
+	const toggleBtn = document.getElementById("video-toggle");
+	const pause = document.getElementById("video-pause-icon");
+	const play = document.getElementById("video-play-icon");
 
 	document.addEventListener("DOMContentLoaded", function addAutoplay() {
 		if (window.innerWidth < 1024) {
 			video?.removeAttribute("autoplay");
+		}
+	});
+
+	toggleBtn?.addEventListener("click", () => {
+		if (video.paused) {
+			video?.play();
+			toggleBtn?.setAttribute("aria-pressed", "true");
+			toggleBtn?.setAttribute("aria-label", "Play background video");
+			pause?.classList.remove("hidden");
+			play?.classList.add("hidden");
+		} else {
+			video?.pause();
+			toggleBtn?.setAttribute("aria-pressed", "false");
+			toggleBtn?.setAttribute("aria-label", "Pause background video");
+			pause?.classList.add("hidden");
+			play?.classList.remove("hidden");
 		}
 	});
 </script>

@@ -1,0 +1,24 @@
+---
+import { calculateReadTime } from "../utils/blog";
+
+interface Props {
+	text: string | undefined;
+	className?: string;
+}
+
+const { text, className = "" } = Astro.props;
+const minutes = calculateReadTime(text);
+---
+
+<span class={`read-time ${className}`}>
+	{minutes}
+	{minutes === 1 ? "min" : "mins"} read
+</span>
+
+<style>
+	.read-time {
+		font-size: 0.9rem;
+		color: #666;
+		/* You can add a subtle icon or custom styles here */
+	}
+</style>

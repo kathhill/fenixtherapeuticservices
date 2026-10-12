@@ -4,7 +4,7 @@ import type { CollectionEntry } from 'astro:content'
 export function calculateReadTime(text: string | undefined): number {
   if (!text) return 1
   const wordsPerMinute = 200
-  const words = text.trim().split(/\\s+/).length
+  const words = text.trim().split(/\s+/).length
   return Math.ceil(words / wordsPerMinute)
 }
 

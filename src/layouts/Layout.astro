@@ -29,9 +29,9 @@ const year = new Date().getFullYear();
 		<meta name="generator" content={Astro.generator} />
 	</head>
 	<body id={page}>
-		<a class="sr-only focus:not-sr-only skip-link" href="#about"
-			>Skip to main content</a
-		>
+		<a class="sr-only focus:not-sr-only skip-link" href="#about">
+			Skip to main content
+		</a>
 		<header class="navbar">
 			<nav class="navbar-container">
 				<input
@@ -41,7 +41,7 @@ const year = new Date().getFullYear();
 					aria-controls="menu"
 				/>
 				<label class="menu-btn" for="menu-toggle">
-					<span></span>
+					<span class="sr-only">Toggle menu</span>
 				</label>
 				<Navigation />
 			</nav>
