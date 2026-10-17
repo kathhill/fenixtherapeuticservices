@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import logoIconSm from "../images/logo-icon-sm.png";
+import youtube from "../images/yt_icon_red_digital.svg";
 ---
 
 <ul id="menu" class="menu-wrapper">
@@ -24,7 +25,26 @@ import logoIconSm from "../images/logo-icon-sm.png";
 	<li>
 		<a class="menu-item" href="/articles">Articles</a>
 	</li>
+	<li>
+		<a
+			class="menu-item"
+			href="https://www.youtube.com/@DrGregoryHarmeling"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<Image class="yt-icon" src={youtube} alt="YouTube Channel" />
+		</a>
+	</li>
 </ul>
+
+<style lang="scss">
+	img {
+		&.yt-icon {
+			width: 2rem;
+			height: auto;
+		}
+	}
+</style>
 
 <script>
 	const bodyId = document.body.id;
