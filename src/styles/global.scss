@@ -286,7 +286,10 @@ html {
 				list-style: none;
 				margin-left: 6rem;
 				margin-bottom: 0.5rem;
-				font-size: 1.25rem;					
+				font-size: 1.25rem;	
+				&:first-of-type {
+					margin-left: 0;
+				}					
 				a {
 					text-decoration: none;
 					color: #444;
